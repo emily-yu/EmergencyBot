@@ -1,0 +1,17 @@
+PODS:
+  - Alamofire (4.0.1)
+  - APAddressBook/Core (0.3.1)
+  - APAddressBook/Swift (0.3.1):
+    - APAddressBook/Core
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0.1)
+  - APAddressBook/Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  APAddressBook: f7e50fce276ae975c202b83b0ee98f4efde5a104
+
+PODFILE CHECKSUM: a862cfbab5548b3a74a7037f7f661943c87d6219
+
+COCOAPODS: 1.1.1

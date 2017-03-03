@@ -25,7 +25,7 @@ class ViewController: UIViewController {
             "Body": messageField.text ?? ""
         ]
         
-        Alamofire.request("http://f4bde39d.ngrok.io/sms", method: .post, parameters: parameters, headers: headers).response { response in
+        Alamofire.request("http://a6ecc643.ngrok.io/sms", method: .post, parameters: parameters, headers: headers).response { response in
             print(response)
             
         }

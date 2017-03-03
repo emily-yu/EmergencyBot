@@ -1,0 +1,6 @@
+framework module Pods_TwilioSms {
+  umbrella header "Pods-TwilioSms-umbrella.h"
+
+  export *
+  module * { export * }
+}
