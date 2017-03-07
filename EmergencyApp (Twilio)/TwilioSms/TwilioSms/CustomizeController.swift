@@ -11,8 +11,7 @@ import APAddressBook
 
 fileprivate let cellIdentifier = String(describing: UITableViewCell.self)
 
-class CustomizeController: UIViewController
-{
+class CustomizeController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -54,10 +53,10 @@ class CustomizeController: UIViewController
     
     // MARK: - actions
     
-    @IBAction func reloadButtonPressed(_ sender: AnyObject)
-    {
-        loadContacts()
-    }
+//    @IBAction func reloadButtonPressed(_ sender: AnyObject)
+//    {
+//        loadContacts()
+//    }
     
     // MARK: - private
     
@@ -87,7 +86,7 @@ class CustomizeController: UIViewController
     }
 }
 
-// not requesting auth
+// not loading the contacts
 
 extension CustomizeController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

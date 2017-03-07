@@ -27,7 +27,6 @@ class TableViewCell: UITableViewCell {
         imageView?.image = model.thumbnail
         textLabel?.text = contactName(model)
         detailTextLabel?.text = contactPhones(model)
-        
     }
     
     // MARK: - prviate
