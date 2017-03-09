@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import Contacts
 
+var contactStore = CNContactStore()
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -40,7 +42,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+//    func showMessage(message: String) {
+//        let alertController = UIAlertController(title: "Birthdays", message: message, preferredStyle: UIAlertControllerStyle.alert)
+//        
+//        let dismissAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action) -> Void in
+//        }
+//        
+//        alertController.addAction(dismissAction)
+//        
+//        let pushedViewControllers = (self.window?.rootViewController as! UINavigationController).viewControllers
+//        let presentedViewController = pushedViewControllers[pushedViewControllers.count - 1]
+//        
+//        presentedViewController.present(alertController, animated: true, completion: nil)
+//    }
+//    
+    //
 }
-
+//func getAppDelegate() -> AppDelegate {
+//    return UIApplication.shared.delegate as! AppDelegate
+//}
+//
+//func requestForAccess(completionHandler: @escaping (_ accessGranted: Bool) -> Void) {
+//    let authorizationStatus = CNContactStore.authorizationStatus(for: CNEntityType.contacts)
+//    
+//    switch authorizationStatus {
+//    case .authorized:
+//        completionHandler(true)
+//        
+//    case .denied, .notDetermined:
+//        contactStore.requestAccess(for: CNEntityType.contacts, completionHandler: { (access, accessError) -> Void in
+//            if access {
+//                completionHandler(access)
+//            }
+//            else {
+//                if authorizationStatus == CNAuthorizationStatus.denied {
+//                    DispatchQueue.main.asynchronously(execute: { () -> Void in
+//                        let message = "\(accessError!.localizedDescription)\n\nPlease allow the app to access your contacts through the Settings."
+//                        showMessage(message)
+//                    })
+//                }
+//            }
+//        })
+//        
+//    default:
+//        completionHandler(false)
+//    }
+//}

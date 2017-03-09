@@ -9,3 +9,4 @@
 #import <Foundation/Foundation.h>
 #import <APAddressBook/APAddressBook-Bridging.h>
 
+#import <Contacts/Contacts.h>
