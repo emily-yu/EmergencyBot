@@ -5,11 +5,14 @@
 //  Created by Emily on 2/8/17.
 //  Copyright © 2017 Emily. All rights reserved.
 // To run: python app.py in one terminal shell, then ./ngrok http 5000 in another and then run xcode
-//
+
+
+//sending for multiple works - make custom messages? and deploy to heroku
 
 import UIKit
 import Alamofire
-import Contacts
+
+var emergencyContacts: [Int] = [6505754922, 6505754922]
 
 class ViewController: UIViewController {
     
@@ -17,16 +20,23 @@ class ViewController: UIViewController {
     @IBOutlet var messageField: UITextField!
     
     @IBAction func sendData(sender: AnyObject) {
+        for i in emergencyContacts {
+            sendMessage(contact: i);
+            
+        }
+    }
+    
+    func sendMessage(contact:Int){
         let headers = [
             "Content-Type": "application/x-www-form-urlencoded"
         ]
         
         let parameters: Parameters = [
-            "To": phoneNumberField.text ?? "",
+            "To": String(contact), //loop this through emergencyContacts
             "Body": messageField.text ?? ""
         ]
         
-        Alamofire.request("http://a6ecc643.ngrok.io/sms", method: .post, parameters: parameters, headers: headers).response { response in
+        Alamofire.request("http://0f1f1feb.ngrok.io/sms", method: .post, parameters: parameters, headers: headers).response { response in
             print(response)
             
         }

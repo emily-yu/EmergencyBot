@@ -12,11 +12,5 @@ class CollectionViewCell: UITableViewCell {
     
     @IBOutlet var cellHeader: UILabel!
     @IBOutlet var cellSubtitle: UILabel!
-    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        var cell:CollectionViewCell = self.tableView.dequeueReusableCellWithIdentifier("CollectionViewCell") as! CollectionViewCell
-//
-//        cell.cellHeader?.text = "same"
-//        return cell
-//    }
+
 }

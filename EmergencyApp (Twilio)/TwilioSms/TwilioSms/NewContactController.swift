@@ -16,9 +16,14 @@ class NewContactController: UIViewController {
     @IBOutlet var additionalNotes: UITextField!
     
     @IBAction func submitButton(_ sender: Any) {
-        if (phoneNumber.text != ""){
+        if (phoneNumber.text != "" ){
             // append textfields to array
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Contacts")
+            animals.append(name.text!)
+            troll.append(Int(phoneNumber.text!)!)
+            
+            // save new array
+            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
             self.present(vc!, animated: true, completion: nil)
         }
         else {

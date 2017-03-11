@@ -11,6 +11,7 @@
 		A119B6B21E674BA500BCB6D3 /* CustomizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119B6B11E674BA500BCB6D3 /* CustomizeController.swift */; };
 		A119B6B81E6754E400BCB6D3 /* TwilioSms-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = A119B6B71E6754E400BCB6D3 /* TwilioSms-Bridging-Header.h */; };
 		A184C4CE1E6FAACA00B1302F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184C4CD1E6FAACA00B1302F /* CollectionViewCell.swift */; };
+		A1EA8DE11E72A592002902B2 /* PreferenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA8DE01E72A592002902B2 /* PreferenceController.swift */; };
 		A1F7D7C91E7102F4005F19E9 /* NewContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */; };
 		D28788FC1D95E27F003668D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28788FB1D95E27F003668D7 /* AppDelegate.swift */; };
 		D28788FE1D95E27F003668D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28788FD1D95E27F003668D7 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		A119B6B11E674BA500BCB6D3 /* CustomizeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeController.swift; sourceTree = "<group>"; };
 		A119B6B71E6754E400BCB6D3 /* TwilioSms-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TwilioSms-Bridging-Header.h"; sourceTree = "<group>"; };
 		A184C4CD1E6FAACA00B1302F /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A1EA8DE01E72A592002902B2 /* PreferenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceController.swift; sourceTree = "<group>"; };
 		A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewContactController.swift; sourceTree = "<group>"; };
 		D28788F81D95E27F003668D7 /* TwilioSms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwilioSms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28788FB1D95E27F003668D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +84,9 @@
 				D28788FD1D95E27F003668D7 /* ViewController.swift */,
 				A119B6B11E674BA500BCB6D3 /* CustomizeController.swift */,
 				A184C4CD1E6FAACA00B1302F /* CollectionViewCell.swift */,
-				D28788FF1D95E27F003668D7 /* Main.storyboard */,
+				A1EA8DE01E72A592002902B2 /* PreferenceController.swift */,
 				A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */,
+				D28788FF1D95E27F003668D7 /* Main.storyboard */,
 				D28789021D95E27F003668D7 /* Assets.xcassets */,
 				D28789041D95E27F003668D7 /* LaunchScreen.storyboard */,
 				D28789071D95E27F003668D7 /* Info.plist */,
@@ -228,6 +231,7 @@
 				D28788FE1D95E27F003668D7 /* ViewController.swift in Sources */,
 				A1F7D7C91E7102F4005F19E9 /* NewContactController.swift in Sources */,
 				A184C4CE1E6FAACA00B1302F /* CollectionViewCell.swift in Sources */,
+				A1EA8DE11E72A592002902B2 /* PreferenceController.swift in Sources */,
 				A119B6B21E674BA500BCB6D3 /* CustomizeController.swift in Sources */,
 				D28788FC1D95E27F003668D7 /* AppDelegate.swift in Sources */,
 				A119B6B81E6754E400BCB6D3 /* TwilioSms-Bridging-Header.h in Sources */,

@@ -13,38 +13,40 @@
 //
 //class CustomizeController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //
+
+var animals: [String] = ["Name1", "Name2", "Name3", "Name4", "Name5", "Name6"]
+var troll: [Int] = [6505754922, 6505754922, 6505754922, 6505754922, 6505754922, 6505754922, 6505754922]
+
+
 import UIKit
 class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    
-    // These strings will be the data for the table view cells
-    var animals: [String] = ["Horse", "Cow", "Camel", "Pig", "Sheep", "Goat"]
-    var troll: [String] = ["troll1","troll2","troll3","troll4","troll5","troll6",]
-    
+
     let cellReuseIdentifier = "cell"
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var addContact: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // It is possible to do the following three things in the Interface Builder
-        // rather than in code if you prefer.
+
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.delegate = self
         tableView.dataSource = self
+        
+        
     }
     
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.animals.count
+        return animals.count
     }
     
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell:CollectionViewCell = self.tableView.dequeueReusableCell(withIdentifier: "CollectionViewCell") as! CollectionViewCell
-        self.tableView.estimatedRowHeight = 50
-        cell.cellHeader.text = self.animals[indexPath.row]
-        cell.cellSubtitle.text = self.troll[indexPath.row]
+
+        cell.cellHeader.text = animals[indexPath.row]
+        cell.cellSubtitle.text = String(troll[indexPath.row])
+        tableView.rowHeight = 80
         
         return cell
     }
