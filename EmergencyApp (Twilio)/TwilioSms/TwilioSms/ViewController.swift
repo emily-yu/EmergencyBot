@@ -4,10 +4,8 @@
 //
 //  Created by Emily on 2/8/17.
 //  Copyright © 2017 Emily. All rights reserved.
-// To run: python app.py in one terminal shell, then ./ngrok http 5000 in another and then run xcode
 
-
-//sending for multiple works - make custom messages? and deploy to heroku
+//sending for multiple works - make custom messages?
 
 import UIKit
 import Alamofire
@@ -36,7 +34,7 @@ class ViewController: UIViewController {
             "Body": messageField.text ?? ""
         ]
         
-        Alamofire.request("http://0f1f1feb.ngrok.io/sms", method: .post, parameters: parameters, headers: headers).response { response in
+        Alamofire.request("http://emergency-app-twilio.herokuapp.com/sms", method: .post, parameters: parameters, headers: headers).response { response in
             print(response)
             
         }

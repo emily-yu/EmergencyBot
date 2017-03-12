@@ -59,6 +59,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A135C0BB1E75E1A00005969C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A1EA8DE01E72A592002902B2 /* PreferenceController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		A135C0BC1E75E1D40005969C /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				A119B6B11E674BA500BCB6D3 /* CustomizeController.swift */,
+				A184C4CD1E6FAACA00B1302F /* CollectionViewCell.swift */,
+				A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */,
+			);
+			name = Contacts;
+			sourceTree = "<group>";
+		};
 		D28788EF1D95E27F003668D7 = {
 			isa = PBXGroup;
 			children = (
@@ -82,10 +100,8 @@
 			children = (
 				D28788FB1D95E27F003668D7 /* AppDelegate.swift */,
 				D28788FD1D95E27F003668D7 /* ViewController.swift */,
-				A119B6B11E674BA500BCB6D3 /* CustomizeController.swift */,
-				A184C4CD1E6FAACA00B1302F /* CollectionViewCell.swift */,
-				A1EA8DE01E72A592002902B2 /* PreferenceController.swift */,
-				A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */,
+				A135C0BC1E75E1D40005969C /* Contacts */,
+				A135C0BB1E75E1A00005969C /* Settings */,
 				D28788FF1D95E27F003668D7 /* Main.storyboard */,
 				D28789021D95E27F003668D7 /* Assets.xcassets */,
 				D28789041D95E27F003668D7 /* LaunchScreen.storyboard */,
