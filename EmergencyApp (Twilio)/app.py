@@ -1,11 +1,10 @@
 from flask import Flask, request
 from twilio.rest import TwilioRestClient
- 
 app = Flask(__name__)
  
 # put your own credentials here
-ACCOUNT_SID = 'SID'
-AUTH_TOKEN = 'TOKEN'
+ACCOUNT_SID = 'ACce55d5efd911222f6eba43f84ee79acd' #ACCOUNT_SID = 'SID'
+AUTH_TOKEN = '300a352d939cb8a6ae3a0163b3d9f55d' #AUTH_TOKEN = 'TOKEN'
  
 client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 
@@ -17,7 +16,7 @@ def hello():
 def send_sms():
     message = client.messages.create(
         to=request.form['To'], 
-        from_='16504223512', #from_='PHONE#',
+        from_= request.form['From'],
         body=request.form['Body'],
     )
  
