@@ -14,11 +14,27 @@
 //class CustomizeController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //
 
+// todo: sending location, mailcompose for help, create custom messages, save the preferences
 import UIKit
 import Foundation
 
-class PreferenceController: UIViewController {
-    @IBOutlet var pTableView: UITableView!
+class PreferenceController: UITableViewController {
+    @IBOutlet var sTableView: UITableView!
+    @IBOutlet var isActivated: UISwitch!
+    @IBAction func isChanged(_ sender: Any) {
+        if isActivated.isOn {
+            print("the button is off")
+            isActivated.setOn(false, animated:true)
+        } else {
+            print( "The Switch is On")
+            isActivated.setOn(true, animated:true)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You selected cell #\(indexPath.row)!")
+    }
+
     
        override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +42,9 @@ class PreferenceController: UIViewController {
     
     
 }
-
+//override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//    print("You selected cell #\(indexPath.row)!")
+//}
 
 //let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
 //alert.addTextField { (textField) in

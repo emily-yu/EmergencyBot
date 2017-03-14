@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2C501A3E4BD59D90FE3F2FDDC4C39417C91317D1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2C501A3E4BD59D90FE3F2FDDC4C39417C91317D1" : 9223372036854775807,
+    "CF4221CBD53CFE0308AE06168ADF86B98F9214A9" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1EAA72EC-2B44-48C1-83F9-A5CD362D13EC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2C501A3E4BD59D90FE3F2FDDC4C39417C91317D1" : "EmergencyApp%20(Twilio)\/",
+    "CF4221CBD53CFE0308AE06168ADF86B98F9214A9" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TwilioSms",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TwilioSms\/TwilioSms.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.heroku.com\/emergency-app-twilio.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2C501A3E4BD59D90FE3F2FDDC4C39417C91317D1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/emily-yu\/EmergencyBot.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CF4221CBD53CFE0308AE06168ADF86B98F9214A9"
+    }
+  ]
+}
