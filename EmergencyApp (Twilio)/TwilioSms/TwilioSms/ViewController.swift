@@ -19,8 +19,8 @@ var verifiedNumbers: [Int] = [16504223512] // list of verified numbers
 
 class ViewController: UIViewController {
     
-    @IBOutlet var phoneNumberField: UITextField!
-    @IBOutlet var messageField: UITextField!
+//    @IBOutlet var phoneNumberField: UITextField!
+    @IBOutlet var messageField: UITextView!
     
     @IBAction func sendData(sender: AnyObject) {
         for i in emergencyContacts {

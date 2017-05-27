@@ -10,7 +10,7 @@ client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return "hey its me"
 
 @app.route('/sms', methods=['POST'])
 def send_sms():
