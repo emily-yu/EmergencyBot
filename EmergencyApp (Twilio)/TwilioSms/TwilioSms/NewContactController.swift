@@ -13,7 +13,8 @@ class NewContactController: UIViewController {
     
     @IBOutlet var name: UITextField!
     @IBOutlet var phoneNumber: UITextField!
-    @IBOutlet var additionalNotes: UITextField!
+//    @IBOutlet var additionalNotes: UITextField!
+    @IBOutlet var additionalNotes: UITextView!
     
     @IBAction func submitButton(_ sender: Any) {
         if (phoneNumber.text != "" ){
