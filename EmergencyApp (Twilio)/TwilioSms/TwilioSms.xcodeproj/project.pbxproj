@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0655DB44136F65FCB4752227 /* Pods_TwilioSms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C17A9D4090A1924B01968D2 /* Pods_TwilioSms.framework */; };
-		A119B6B21E674BA500BCB6D3 /* CustomizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119B6B11E674BA500BCB6D3 /* CustomizeController.swift */; };
+		A119B6B21E674BA500BCB6D3 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119B6B11E674BA500BCB6D3 /* ContactsController.swift */; };
 		A119B6B81E6754E400BCB6D3 /* TwilioSms-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = A119B6B71E6754E400BCB6D3 /* TwilioSms-Bridging-Header.h */; };
-		A184C4CE1E6FAACA00B1302F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184C4CD1E6FAACA00B1302F /* CollectionViewCell.swift */; };
-		A1EA8DE11E72A592002902B2 /* PreferenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EA8DE01E72A592002902B2 /* PreferenceController.swift */; };
+		A15588F11EDADCDD00552B38 /* CustomizeContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15588F01EDADCDD00552B38 /* CustomizeContact.swift */; };
+		A15588F31EDADD4000552B38 /* EmergencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15588F21EDADD4000552B38 /* EmergencyController.swift */; };
+		A15588F61EDADD7600552B38 /* AddEmergencyContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15588F51EDADD7600552B38 /* AddEmergencyContactController.swift */; };
 		A1F7D7C91E7102F4005F19E9 /* NewContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */; };
 		D28788FC1D95E27F003668D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28788FB1D95E27F003668D7 /* AppDelegate.swift */; };
-		D28788FE1D95E27F003668D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28788FD1D95E27F003668D7 /* ViewController.swift */; };
+		D28788FE1D95E27F003668D7 /* CrowdMessenging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28788FD1D95E27F003668D7 /* CrowdMessenging.swift */; };
 		D28789011D95E27F003668D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28788FF1D95E27F003668D7 /* Main.storyboard */; };
 		D28789031D95E27F003668D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28789021D95E27F003668D7 /* Assets.xcassets */; };
 		D28789061D95E27F003668D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28789041D95E27F003668D7 /* LaunchScreen.storyboard */; };
@@ -24,14 +25,15 @@
 		2B7713A9F093A84E23017059 /* Pods-TwilioSms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioSms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioSms/Pods-TwilioSms.debug.xcconfig"; sourceTree = "<group>"; };
 		6FD4152B81F95F09A84F5C7A /* Pods-TwilioSms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioSms.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioSms/Pods-TwilioSms.release.xcconfig"; sourceTree = "<group>"; };
 		8C17A9D4090A1924B01968D2 /* Pods_TwilioSms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwilioSms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A119B6B11E674BA500BCB6D3 /* CustomizeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeController.swift; sourceTree = "<group>"; };
+		A119B6B11E674BA500BCB6D3 /* ContactsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		A119B6B71E6754E400BCB6D3 /* TwilioSms-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TwilioSms-Bridging-Header.h"; sourceTree = "<group>"; };
-		A184C4CD1E6FAACA00B1302F /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		A1EA8DE01E72A592002902B2 /* PreferenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceController.swift; sourceTree = "<group>"; };
+		A15588F01EDADCDD00552B38 /* CustomizeContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeContact.swift; sourceTree = "<group>"; };
+		A15588F21EDADD4000552B38 /* EmergencyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyController.swift; sourceTree = "<group>"; };
+		A15588F51EDADD7600552B38 /* AddEmergencyContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmergencyContactController.swift; sourceTree = "<group>"; };
 		A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewContactController.swift; sourceTree = "<group>"; };
 		D28788F81D95E27F003668D7 /* TwilioSms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwilioSms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28788FB1D95E27F003668D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D28788FD1D95E27F003668D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D28788FD1D95E27F003668D7 /* CrowdMessenging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdMessenging.swift; sourceTree = "<group>"; };
 		D28789001D95E27F003668D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D28789021D95E27F003668D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D28789051D95E27F003668D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,22 +61,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A135C0BB1E75E1A00005969C /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				A1EA8DE01E72A592002902B2 /* PreferenceController.swift */,
-			);
-			name = Settings;
-			sourceTree = "<group>";
-		};
 		A135C0BC1E75E1D40005969C /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				A119B6B11E674BA500BCB6D3 /* CustomizeController.swift */,
-				A184C4CD1E6FAACA00B1302F /* CollectionViewCell.swift */,
+				A119B6B11E674BA500BCB6D3 /* ContactsController.swift */,
 				A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */,
+				A15588F01EDADCDD00552B38 /* CustomizeContact.swift */,
 			);
 			name = Contacts;
+			sourceTree = "<group>";
+		};
+		A15588F41EDADD4900552B38 /* Urgent */ = {
+			isa = PBXGroup;
+			children = (
+				A15588F21EDADD4000552B38 /* EmergencyController.swift */,
+				A15588F51EDADD7600552B38 /* AddEmergencyContactController.swift */,
+			);
+			name = Urgent;
+			sourceTree = "<group>";
+		};
+		A15588F71EDADD8800552B38 /* Crowd Messenging */ = {
+			isa = PBXGroup;
+			children = (
+				D28788FD1D95E27F003668D7 /* CrowdMessenging.swift */,
+			);
+			name = "Crowd Messenging";
 			sourceTree = "<group>";
 		};
 		D28788EF1D95E27F003668D7 = {
@@ -99,9 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				D28788FB1D95E27F003668D7 /* AppDelegate.swift */,
-				D28788FD1D95E27F003668D7 /* ViewController.swift */,
+				A15588F71EDADD8800552B38 /* Crowd Messenging */,
+				A15588F41EDADD4900552B38 /* Urgent */,
 				A135C0BC1E75E1D40005969C /* Contacts */,
-				A135C0BB1E75E1A00005969C /* Settings */,
 				D28788FF1D95E27F003668D7 /* Main.storyboard */,
 				D28789021D95E27F003668D7 /* Assets.xcassets */,
 				D28789041D95E27F003668D7 /* LaunchScreen.storyboard */,
@@ -244,12 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D28788FE1D95E27F003668D7 /* ViewController.swift in Sources */,
+				A15588F11EDADCDD00552B38 /* CustomizeContact.swift in Sources */,
+				D28788FE1D95E27F003668D7 /* CrowdMessenging.swift in Sources */,
 				A1F7D7C91E7102F4005F19E9 /* NewContactController.swift in Sources */,
-				A184C4CE1E6FAACA00B1302F /* CollectionViewCell.swift in Sources */,
-				A1EA8DE11E72A592002902B2 /* PreferenceController.swift in Sources */,
-				A119B6B21E674BA500BCB6D3 /* CustomizeController.swift in Sources */,
+				A119B6B21E674BA500BCB6D3 /* ContactsController.swift in Sources */,
 				D28788FC1D95E27F003668D7 /* AppDelegate.swift in Sources */,
+				A15588F31EDADD4000552B38 /* EmergencyController.swift in Sources */,
+				A15588F61EDADD7600552B38 /* AddEmergencyContactController.swift in Sources */,
 				A119B6B81E6754E400BCB6D3 /* TwilioSms-Bridging-Header.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

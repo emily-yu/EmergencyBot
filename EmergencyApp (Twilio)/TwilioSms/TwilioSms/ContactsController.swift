@@ -32,7 +32,6 @@ class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataS
         tableView.delegate = self
         tableView.dataSource = self
         
-        
     }
     
     // number of rows in table view
@@ -54,8 +53,7 @@ class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataS
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
-        
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     // this method handles row deletion
@@ -91,6 +89,12 @@ class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataS
         return [editAction, deleteAction]
     }
 }
+
+class CollectionViewCell: UITableViewCell {
+    @IBOutlet var cellHeader: UILabel!
+    @IBOutlet var cellSubtitle: UILabel!
+}
+
 
 //
 //    let addressBook = APAddressBook()
