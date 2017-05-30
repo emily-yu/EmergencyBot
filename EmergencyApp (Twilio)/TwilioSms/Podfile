@@ -8,5 +8,7 @@ target 'TwilioSms' do
   # Pods for TwilioSms
   pod 'Alamofire', '~> 4.0.1'
   pod 'APAddressBook/Swift’
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 end

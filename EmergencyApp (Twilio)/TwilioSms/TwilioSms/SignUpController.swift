@@ -7,9 +7,51 @@
 //
 
 import Foundation
+import Firebase
 
 class SignUpController: UIViewController {
+    
+    var ref: FIRDatabaseReference!
+    
+    
+    @IBOutlet var email: UITextField!
+    @IBOutlet var password: UITextField!
+    
     @IBAction func signup(_ sender: Any) {
-        print("TODO: Add Auth")
+        if email.text! == "" || password.text! == "" {
+            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            present(alertController, animated: true, completion: nil)
+            
+        }
+        else {
+            FIRAuth.auth()?.createUser(withEmail: email.text!, password: password.text!) { (user, error) in
+                self.ref = FIRDatabase.database().reference()
+                if error == nil {
+                    // set user details
+                    self.ref.child((user?.uid)!).setValue([
+                        "name": "ym"
+                    ])
+                    
+                    //login w/ new account
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
+                    self.present(vc!, animated: true, completion: nil)
+                    print((user?.uid)!)
+                    
+                }
+                else {
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                
+            }
+        }
+    }
     }
 }

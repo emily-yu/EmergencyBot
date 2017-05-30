@@ -7,93 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0211ED7CF7FE57E57FAB6FB487C037CE /* Pods-TwilioSms-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 223BD792801FE484A9E3811FE1503924 /* Pods-TwilioSms-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0634698628DE1110F765DFC3F38CEC8A /* APAddressBookExternalChangeRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = DA84255C9296744CD4CB91D9ECC7F1C7 /* APAddressBookExternalChangeRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08B1CD40515A1372D1B6EB6E47523A /* Timeline.swift */; };
-		131CB20D22C89D0125998C93FAEBE384 /* APContactDataExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CDD436E33C35A1F20A949A8D757CFF /* APContactDataExtractor.m */; };
-		13F732D7DD972C3FC13F5BDD7459EF08 /* APContactBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F1734EB7FF7CAEE9E6180B92DCE48BD6 /* APContactBuilder.m */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9DA7C4DC92E015D593FB520B6D8351E /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		293431BECE43F9BBE397CA68C6CC73F0 /* APAddressBookBaseRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = AF34B8E5D0BF6F4BACFFFB167E99E5BC /* APAddressBookBaseRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F8C8A822847C133DA0280CF394793DB /* APAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A36B84A634CA6FCA928823F4FB637C /* APAddressBook.m */; };
-		317D0FD16C51D7E732E585D7FB9FE142 /* APAddressBook-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = C0844E2C08A74D297FB57350BE418A81 /* APAddressBook-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		320AFDD1FA9B11B6BA7B2BC1D3FE452B /* APAddressBookExternalChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA9A6842CA55DB0F65884F93AB64F33 /* APAddressBookExternalChangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805608BC709C7FCEA4C1543341886AB /* TaskDelegate.swift */; };
-		49CC8F53718897860AF1CA8293D55D20 /* APEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BF0392548E7D7781FCACF262C07500 /* APEmail.m */; };
-		4A7E36ABCB54698F7B4A3449F9FA543F /* APSocialProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8C7031BC3CB54660174405416BB306 /* APSocialProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E6B72AB4EBC48A538A6D9358C2E4243 /* APAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B575AEA5866DEF5A81AEA256C4E006 /* APAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		503F7A000E80A5E0544E7B1D8EFDE4E9 /* APImageExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5273889E58B18A9F4F247BA229306D73 /* APImageExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51A09E9A3B9506BFA79F670A7768CCCC /* APAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DE13B6DD803769F0DBDD2185E0F225 /* APAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51EA1BDBE725435333267E220BBC7029 /* APContactDataExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D00282205B4EF87229C582EA2EDD310 /* APContactDataExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51F15C0B449B9B37FE4907A46F11ADBD /* APPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = D7312FD44CF4D30D6019E2A356DBE7B1 /* APPhone.m */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEEDDE7BDBFF861B66701C58138703F /* Request.swift */; };
-		553521E6F76398B56A93BDAC608518F0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7CAE5C3E7B8BDDDBB36B95DF186FE /* AddressBook.framework */; };
-		5CF3EF0272C516AA745DD8FB10BB0CF0 /* APImageExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BFACF6CFE4C0889DDA039A0F6BAD3A /* APImageExtractor.m */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42E9EBAE00CB3B01806A6D295A3609 /* DispatchQueue+Alamofire.swift */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DCC7649821FAC6A63DE635A7B1CA47 /* ServerTrustPolicy.swift */; };
-		63AD029580603073B402DA372A866157 /* APRecordDate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9914C46E84C0EC4B0DC5560335E5C96 /* APRecordDate.m */; };
-		6499728A58462027C7DF322197CF98AE /* APSocialServiceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B40A08B79BC642D2EA3C1C68FAD5 /* APSocialServiceHelper.m */; };
-		6CDDCEB20CEB882822CF6A75A3676F3D /* APAddressBookRefWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C32A337793DBCE654A793D77773127 /* APAddressBookRefWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F022FD4FC5BD3D0CEC7B74F2E20493D /* APJob.h in Headers */ = {isa = PBXBuildFile; fileRef = C05CC963FA0C75B59AE20D7DE2BF94FF /* APJob.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78B2BD67B2FD7DC77C1271D6202ECF0C /* APSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F52F9FE3DC51AEF8DCC2EF67469797 /* APSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79C79977FBEE7539DF0BD11A7EE1DABF /* APSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB385EE4FA35ACEB12947E6983CBF56 /* APSource.m */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50395DC6E2110F69EC4EB67F5F64D8A /* SessionDelegate.swift */; };
-		7C040A151164D155A624DCA3A3768471 /* APTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A42F1F3368B4CDC97F2B079AC6EC8C6 /* APTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D7E7564A04F7B2AC1956B43B190105B /* APThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 9160750EA9368D808C3AF51A1F531946 /* APThread.m */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25AFC823FAEE41D4ECE22643105DA5C /* Result.swift */; };
-		7F5C7917FD687381D26D14163C286A6C /* APContactListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF614D902361B767928EFD7811AE2FD /* APContactListBuilder.m */; };
-		82FC6BA642B784AF15504B3CAD6112F5 /* APAddressBook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F395B0A0FB4AD0F2F48DACB4CA454B9 /* APAddressBook-dummy.m */; };
-		842D3CA6318D8EF4481729D8F7F898D0 /* APContactDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C96B7D711D8C31801D65BD995A8C51 /* APContactDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		843513ADC01D2246AB47D538614D8199 /* APContact.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FD6516E7A4CA55DA40F2C5933E30E6 /* APContact.m */; };
-		87C047B303CE65D3F1B61EE7027D58B8 /* APSocialServiceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D65A6E10B7615348CA35BBE7DA9A91CE /* APSocialServiceHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C6423512E10A8E32EA347E50F06E94F /* APPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECA0C2DD183D4F93F7A85235BE1F52F /* APPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C6A2A4504665F7641FD8FB84FA7CD9B /* APRelatedPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = C339F24FF2DDC1ADEC97A11F8FEF0B1F /* APRelatedPerson.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CEE105C4D14A5818E1CBA13F179B582 /* APAddressBookRefWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C15B639566B91970CA702C23A564980 /* APAddressBookRefWrapper.m */; };
-		951DCCDD198B15FF20E2C323ABDB8B96 /* APAddressBookContactsRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4AF3A734592FF967DDEE3A22A1BE27 /* APAddressBookContactsRoutine.m */; };
-		9B6508381F8C7772A6E73D48C6BD6982 /* APEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CB05FD1AA29FEB14AB7F0BA356645E /* APEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D48022D81561FA771A43D59FF1F7C69 /* APName.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DFE9E45AFED3AC7795FD44C79557AD /* APName.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59832732247B2DD8F6DA549F997C07A /* AFError.swift */; };
-		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0A1D445C5A894350982E575DC96B3 /* Foundation.framework */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DCD449C6C146EBCB9511A75683BFD1 /* NetworkReachabilityManager.swift */; };
-		A3B68C6BCBC03EA93F24E9ECFCF2E30D /* APSocialProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEB64AE57463F46AA2067B4587E5F54 /* APSocialProfile.m */; };
-		A9BCE37F37DB97642D2D929AB23253C9 /* APAddressBook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3FA9D6C6229F1CFCF570C91BD62BF0 /* APAddressBook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6DB92E53DD13AEBA4F75562FF77740 /* Alamofire-dummy.m */; };
-		AA0FF7BCCB1A7FF7281ADB56DB2C3B3B /* APAddressBookAccessRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = C5DFBEE7E1528AD0519A4232243429F4 /* APAddressBookAccessRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CB4B34F797AB2030FB9FB0AEF3120 /* SessionManager.swift */; };
-		B045B961C5FBA8FA97077B6B7EE0EA38 /* APAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2F2091D9BA36FB72F846A3FB3FF29 /* APAddress.m */; };
-		B07EA60E9B6A892F6DDF7C21F2B940C9 /* APJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CEF91C684719E0CC64B9FCAA802972 /* APJob.m */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0BAC9842BD6A72AF4157150114E9C0 /* MultipartFormData.swift */; };
-		B6D38F8462B3EEA8A1C482806BE15121 /* APContactListBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 66793A27A4A32D4D3C91B1150C568360 /* APContactListBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D0A8B8219ECBD070BF9CB8B93680B5 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68FA86DDCB6A60117302792982118D6 /* ParameterEncoding.swift */; };
-		BE9FBE763372EEFDD89F9509A35ACEEB /* APAddressBookBaseRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E295BC95D64791173C049B7D176B7B /* APAddressBookBaseRoutine.m */; };
-		C05B681AF5A4DE98FBA50B1A6A31805C /* APThread.h in Headers */ = {isa = PBXBuildFile; fileRef = D30DAACAFED3F3676304D3E15DDE42BF /* APThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C14D34925F8C861FB6C974FF920C12EA /* APName.m in Sources */ = {isa = PBXBuildFile; fileRef = 57017ED8CC19B213B373730CD79B4360 /* APName.m */; };
-		CB1F9B017823F1C82A0F2E67CA2E5812 /* APAddressBookExternalChangeRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A8EBC3A0BCB54F70A139698E55025F /* APAddressBookExternalChangeRoutine.m */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96524136CA3CDD8E94917555F2C9F4 /* Response.swift */; };
-		CC24B2A0A948AF1869B63B2701412258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0A1D445C5A894350982E575DC96B3 /* Foundation.framework */; };
-		CC59465B779B9B8FE6BE6A98EFF177D3 /* APContactBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E475A59D588DAD2E5E5F73C8D627836 /* APContactBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF8510B80A034111D38D725B88339B44 /* Pods-TwilioSms-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E3EBC874D683C1C2A7C9C7E570163D /* Pods-TwilioSms-dummy.m */; };
-		DC904E384C8AE46067B04EAB2F4465F7 /* APRelatedPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BFBD58C2F59CFB7C05C83C7D7750B8 /* APRelatedPerson.m */; };
-		E514B14A77B77CB08C9BB8A2CCBB8764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD0A1D445C5A894350982E575DC96B3 /* Foundation.framework */; };
-		E74A0467366691FE992AA38111D88BFF /* APContactDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331A4E51DC10F69E4D983D59E35E62C5 /* APContactDate.m */; };
-		E9B5E5A3F04F5E5E7CE8C49B14F35B25 /* APAddressBookAccessRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 34899C12E8819A85BDED6FAEED165298 /* APAddressBookAccessRoutine.m */; };
-		EB8093BA66EFECAB886878B2382928AA /* APRecordDate.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE820A6522FA71A6A598F44ACD8F778 /* APRecordDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F1D25C2BAA5928DD37FE797C7DEC82 /* Notifications.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEB74A7717C1B006090E04A8BEA124 /* ResponseSerialization.swift */; };
-		F87F0CBCA478007840C607A7FC07E27D /* APContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC50DB5346038E7F8A30400BD452072 /* APContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2423BAE17F15434669463E662637F92 /* Alamofire.swift */; };
-		FBADBCB9A4F273C2E972CA0CCEB10198 /* APAddressBookContactsRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FE56A0BD681F8E8012279CCA4B3587 /* APAddressBookContactsRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0634698628DE1110F765DFC3F38CEC8A /* APAddressBookExternalChangeRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2525DD8B97DF84B2F4BEEC305B7164B9 /* APAddressBookExternalChangeRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07340F15BACBA601736DBB2ABF1ABC35 /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D859632E2CB0C7E42B94339D162B7E /* GTMSessionFetcherLogging.m */; };
+		0749EC40D3519957D43A1040F9662F71 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC67E51A0A5E04FC7E1282E9F76E917 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A331ABE8745C56C068DF3902211DA1 /* Timeline.swift */; };
+		11F0D0CB930604B4DAAE93FEA3904826 /* GTMNSDictionary+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCBF36E69A89740AE7BFDBEF6CDA17E /* GTMNSDictionary+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		131CB20D22C89D0125998C93FAEBE384 /* APContactDataExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3C80F93C7373D262846B572B8487B6 /* APContactDataExtractor.m */; };
+		13F732D7DD972C3FC13F5BDD7459EF08 /* APContactBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD4D54B28A493234ADDBF94C8435E03 /* APContactBuilder.m */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F62E698E74D134F7216B7CB02D5C10B7 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ED67707C258751E7888DAC2AB3D8501 /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 53CA96D5B0155012304E149579C6E150 /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F9B999DFAA1052294448B64C77434B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A3E7657256079AAD79768B047F404 /* Foundation.framework */; };
+		293431BECE43F9BBE397CA68C6CC73F0 /* APAddressBookBaseRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EAE190FB27BFF3DFB3349C45C1C3AE0 /* APAddressBookBaseRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EFC826FB30ECD27C98CE7F3707E9012 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D8A0424FC335499C157785558D118 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2F8C8A822847C133DA0280CF394793DB /* APAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = C42CDB433224FB9D2A1EC41D6EA28A54 /* APAddressBook.m */; };
+		317D0FD16C51D7E732E585D7FB9FE142 /* APAddressBook-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B4272731E2DA796AC920BDAC79649C /* APAddressBook-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		320AFDD1FA9B11B6BA7B2BC1D3FE452B /* APAddressBookExternalChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0AC484108D6FFA1BDD6C00FF16DC9D /* APAddressBookExternalChangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CF9BB4493C89CB01FFADD6DB754927 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 153535998E0AB792B4C7F99C55A8F6CF /* GoogleToolboxForMac-dummy.m */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23F65515FE41E101292F368210FA3F6 /* TaskDelegate.swift */; };
+		49CC8F53718897860AF1CA8293D55D20 /* APEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B47C0F777FA375C92A09C8880CE98AD /* APEmail.m */; };
+		4A7E36ABCB54698F7B4A3449F9FA543F /* APSocialProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB733C3CC114CDEC40DB013B7C65A5D /* APSocialProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E6B72AB4EBC48A538A6D9358C2E4243 /* APAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = AA67ED26A1518813649A45DC97157552 /* APAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F2AB5BFF7D9DE66B8B242ACE69AE0D9 /* GTMDebugThreadValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = B01C595C567F86F75AD1A94B2092FCC1 /* GTMDebugThreadValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		503F7A000E80A5E0544E7B1D8EFDE4E9 /* APImageExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 887D4E639B66A728A5D2238E04043256 /* APImageExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51A09E9A3B9506BFA79F670A7768CCCC /* APAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBF3B74DED222529C228ADF2084BD11 /* APAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51EA1BDBE725435333267E220BBC7029 /* APContactDataExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC2D66D58AE1D1C05BD6CE5B7292145 /* APContactDataExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51F15C0B449B9B37FE4907A46F11ADBD /* APPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C192C65E17F6F4A3B3C327B6B674D6B3 /* APPhone.m */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683B5C6938BE8D95EF772F6E1BFB37F /* Request.swift */; };
+		553521E6F76398B56A93BDAC608518F0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C023D4AAA4F28CC4B1DFB11A4DFEC5 /* AddressBook.framework */; };
+		5B92D1D5ECFEBA99F4C67864E1397A6D /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 36132970E7DED883B2EF8178EFC638FB /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5CF3EF0272C516AA745DD8FB10BB0CF0 /* APImageExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA76C9CDB79AB1D415F91B8768E2C1 /* APImageExtractor.m */; };
+		60CBAF4F0B0B9179C70F05C373FF99DF /* Pods-TwilioSms-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 223BD792801FE484A9E3811FE1503924 /* Pods-TwilioSms-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15472169CE70E384F3E24F66E194CB9C /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC911288EE9D578A4AD76AF65B23A8 /* ServerTrustPolicy.swift */; };
+		63AD029580603073B402DA372A866157 /* APRecordDate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF970BFF3AA27026B0381AB6AE7344C /* APRecordDate.m */; };
+		6499728A58462027C7DF322197CF98AE /* APSocialServiceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 521C5F35D4BCEB2306C97136BC3BC414 /* APSocialServiceHelper.m */; };
+		64F31B70A6E5E6963518A01C285B435F /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DECF77117F2F16221F8A76FFDE15662A /* GTMSessionFetcher.m */; };
+		65B56BD3DBC9B81BB008219D0BA735A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32F7A9CC164F35C5BE2FF39BF1D14B5 /* Security.framework */; };
+		6CDDCEB20CEB882822CF6A75A3676F3D /* APAddressBookRefWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F417FB48402F3F713C7C5805394938 /* APAddressBookRefWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EA6DFC4473A9B2DB6B8A42EA986BA5B /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6329EACCAEFF470306EC37C7746EC7A /* GTMSessionFetcher-dummy.m */; };
+		6F022FD4FC5BD3D0CEC7B74F2E20493D /* APJob.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E3692F3E2EE9A2ACF060D2322B9E24 /* APJob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78B2BD67B2FD7DC77C1271D6202ECF0C /* APSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 183D8E663E2B6DD17ED59BAB08F76D34 /* APSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79C79977FBEE7539DF0BD11A7EE1DABF /* APSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1471D76881007BE3F1DA351B37A987F1 /* APSource.m */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62961A6CFEE0BAB363040B13926F7AE6 /* SessionDelegate.swift */; };
+		7C040A151164D155A624DCA3A3768471 /* APTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E637C1E110A472E75C46BD9F1E0508 /* APTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D7E7564A04F7B2AC1956B43B190105B /* APThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3298C28B6C67F8320B5EE8529A73B /* APThread.m */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E43548881A6092EA526112B53C580C /* Result.swift */; };
+		7F5C7917FD687381D26D14163C286A6C /* APContactListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 309BCA510C142A30CDD420978FC92EEA /* APContactListBuilder.m */; };
+		82FC6BA642B784AF15504B3CAD6112F5 /* APAddressBook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1659A489E36390EF357CBD08284C01BD /* APAddressBook-dummy.m */; };
+		842D3CA6318D8EF4481729D8F7F898D0 /* APContactDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 49346300DED31F48D1A4B58179FA244A /* APContactDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843513ADC01D2246AB47D538614D8199 /* APContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E2F44FD5325E51EAD49C26F25C3C4 /* APContact.m */; };
+		87C047B303CE65D3F1B61EE7027D58B8 /* APSocialServiceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E8617DCC31ACCD5F19973B53F5B2690C /* APSocialServiceHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8852FD9AFC242520924D98BE9C4E2477 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4F211694429B15BF9517FF50A5ADC9 /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C6423512E10A8E32EA347E50F06E94F /* APPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E9C36899876A05210C6739BE8884F0 /* APPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C6A2A4504665F7641FD8FB84FA7CD9B /* APRelatedPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AAADB1763ED5DA99EBE36E91F3F904 /* APRelatedPerson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CEE105C4D14A5818E1CBA13F179B582 /* APAddressBookRefWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533CE258A5E6C4425AA8F2EC0B17C7D /* APAddressBookRefWrapper.m */; };
+		951DCCDD198B15FF20E2C323ABDB8B96 /* APAddressBookContactsRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7858A22517ECDF3CFB3802661482F /* APAddressBookContactsRoutine.m */; };
+		95C69447F517DB81437EDE0003486963 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 171C0A2A2A6A270F7D7BEFC17FC65099 /* GTMSessionFetcherService.m */; };
+		967551D370060AE0F4BC86BA2FE66E6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A3E7657256079AAD79768B047F404 /* Foundation.framework */; };
+		9B6508381F8C7772A6E73D48C6BD6982 /* APEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = D056BF2F4CEBB3ADF047A08D90D6EA48 /* APEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D48022D81561FA771A43D59FF1F7C69 /* APName.h in Headers */ = {isa = PBXBuildFile; fileRef = 6859062699FCF6D12DF51A4287AC0402 /* APName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A6A0E521E3A03B5280B39C3748FD22 /* AFError.swift */; };
+		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A3E7657256079AAD79768B047F404 /* Foundation.framework */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689B8313F94B45D3B555B803A5518A5 /* NetworkReachabilityManager.swift */; };
+		A3B68C6BCBC03EA93F24E9ECFCF2E30D /* APSocialProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 64823C2E9F0D8618E49C4D6FEEE41041 /* APSocialProfile.m */; };
+		A9BCE37F37DB97642D2D929AB23253C9 /* APAddressBook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DFC1C50719B04BFBE36584E0A659B0 /* APAddressBook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A817F7956BE07567A7BABBEE5F57FE /* Alamofire-dummy.m */; };
+		AA0FF7BCCB1A7FF7281ADB56DB2C3B3B /* APAddressBookAccessRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E298EFA633366CAD1C9040AD147E1CA /* APAddressBookAccessRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FEB3C24073FC2C556F101984C842D2 /* SessionManager.swift */; };
+		AE4FA66A0CCFA5559E3D891B80DDFD24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A3E7657256079AAD79768B047F404 /* Foundation.framework */; };
+		B045B961C5FBA8FA97077B6B7EE0EA38 /* APAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A1E12B19B2EAE8074E50318AFC4F5E /* APAddress.m */; };
+		B05C496A6F67CE9F60DC711F402AB20A /* GTMDebugSelectorValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 34DEE302114C1ABFF418818480302354 /* GTMDebugSelectorValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B07EA60E9B6A892F6DDF7C21F2B940C9 /* APJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E0447B9CDED937AFCF935AE40B6752 /* APJob.m */; };
+		B229C88845ACD2F92DD8D6B88867635A /* Pods-TwilioSms-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E3EBC874D683C1C2A7C9C7E570163D /* Pods-TwilioSms-dummy.m */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B13BBAF4BC2937F2F3A10F91D0DA3 /* MultipartFormData.swift */; };
+		B6D38F8462B3EEA8A1C482806BE15121 /* APContactListBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 91D20B07160996291D790CD5C152459E /* APContactListBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9A04CBBF007CB8AAF75D61C5EF4D81F /* GTMMethodCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = B6AA7FFA9FB6C6B67F761F4319B427EA /* GTMMethodCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACBAAEDDBAA6FD3B84B8411D3F208A6 /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3728FA860007D5772D2EDD94158EDCB9 /* ParameterEncoding.swift */; };
+		BE9FBE763372EEFDD89F9509A35ACEEB /* APAddressBookBaseRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8648CAB1A2078B2E65B5DBBA83F5BC /* APAddressBookBaseRoutine.m */; };
+		C05B681AF5A4DE98FBA50B1A6A31805C /* APThread.h in Headers */ = {isa = PBXBuildFile; fileRef = ED038E5213A0B0B19FAAC90C3B75AACA /* APThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C14D34925F8C861FB6C974FF920C12EA /* APName.m in Sources */ = {isa = PBXBuildFile; fileRef = D624333F5DB51CC08BD614C64BE9BE68 /* APName.m */; };
+		C34E24520624B382515A0F58185E6926 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A45F417BCC61B4966F8516C9EA0477F /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB1F9B017823F1C82A0F2E67CA2E5812 /* APAddressBookExternalChangeRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FFCD0DC59F17EA44343250CB4E0C4C /* APAddressBookExternalChangeRoutine.m */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC88DECD4C4979515FA6D4BFD2365978 /* Response.swift */; };
+		CC24B2A0A948AF1869B63B2701412258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A3E7657256079AAD79768B047F404 /* Foundation.framework */; };
+		CC59465B779B9B8FE6BE6A98EFF177D3 /* APContactBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB3BD89724E2F8C9E4BAA1C38EA6B60 /* APContactBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D28734EDC84B2A7FBC4D5DCF95177BF8 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2BD396C7804CC79E9EDC03D3EE165A /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3F381B45ADFDDE51CA31F1E141236CA /* GTMSessionFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EFDC5887CE407159437D0876654035C /* GTMSessionFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA2F5A299DC9A8ECC5F73A66172E64BC /* GTMNSString+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = B6BE36EAC1ECAC8370D7C8E3E57E3412 /* GTMNSString+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC904E384C8AE46067B04EAB2F4465F7 /* APRelatedPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A77BC9DCCBBCF87DEDD0D95F8F741F85 /* APRelatedPerson.m */; };
+		DF9559C3822E3C6119BE43E4EDFD7EEE /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B5B787B53BC8E40DD5BA649F9B386E /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E74A0467366691FE992AA38111D88BFF /* APContactDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F6DFC8D7ED6566BDA061144AFB5DE8 /* APContactDate.m */; };
+		E7D23D2F163A34BEC60FD54BCCC22C76 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = A7302578A36BBC01C9244904AD9E46E5 /* GTMNSDictionary+URLArguments.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E9B5E5A3F04F5E5E7CE8C49B14F35B25 /* APAddressBookAccessRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BC0B69DEA0E7BA2B140D21D7EEFD0F /* APAddressBookAccessRoutine.m */; };
+		EB8093BA66EFECAB886878B2382928AA /* APRecordDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 45DE23DD28446B61CDB71E484854C3DA /* APRecordDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8881EA53842588A1D2B17FE1E5B19C0B /* Notifications.swift */; };
+		F09EDD53B94234F5F8DAC4DCD5CD969E /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BB4C61B82BB6F01ABAEEA1DA1E988558 /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4E294C07EE32FFCDCF7FF4D71D850BD /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08C6A74087DAAC692EDDEC87DBBF40 /* GTMSessionUploadFetcher.m */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17238EFBBD1358D3AB5FC9B8AA487ACB /* ResponseSerialization.swift */; };
+		F87F0CBCA478007840C607A7FC07E27D /* APContact.h in Headers */ = {isa = PBXBuildFile; fileRef = B99494D6DEC997115BFC46AA1B273538 /* APContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C3AFB88A77F5C2A99CAAF8C795AD07 /* Alamofire.swift */; };
+		FBADBCB9A4F273C2E972CA0CCEB10198 /* APAddressBookContactsRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B3653ED7DE794E86EC0E2FF2EDF111 /* APAddressBookContactsRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		630F8FF7F2E07D7D79E4D735211E42E6 /* PBXContainerItemProxy */ = {
+		56EDFE94F0FF9D615EE870C0D1045BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C052BEBFBD0AB5218CC64BA3450F6547;
+			remoteInfo = GTMSessionFetcher;
+		};
+		6EE73F633AABA48DC5DEDC95F3850061 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
-		7A2371F99A117E97A6C8A3BEC8F0D1A3 /* PBXContainerItemProxy */ = {
+		A43093F0620BA7C95DD9E52776CFEA66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 107A9565F9DF88517DFD3E28C05B2B96;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		BFE77041D03EAD5963FFBB433713A3CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -103,108 +142,151 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0805608BC709C7FCEA4C1543341886AB /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		0AD0A1D445C5A894350982E575DC96B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		03CA76C9CDB79AB1D415F91B8768E2C1 /* APImageExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APImageExtractor.m; path = Pod/Core/Private/Extractors/APImageExtractor.m; sourceTree = "<group>"; };
+		065B13BBAF4BC2937F2F3A10F91D0DA3 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		089ED93AC16E04C4627E151E768D5486 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		089EE3C51D9B577CC5A8EBE3A2773700 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B508A048E0D1CB18466B54D95D53569 /* Pods-TwilioSms-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TwilioSms-acknowledgements.plist"; sourceTree = "<group>"; };
-		0DB385EE4FA35ACEB12947E6983CBF56 /* APSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSource.m; path = Pod/Core/Public/Models/APSource.m; sourceTree = "<group>"; };
-		0E475A59D588DAD2E5E5F73C8D627836 /* APContactBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactBuilder.h; path = Pod/Core/Private/Builders/APContactBuilder.h; sourceTree = "<group>"; };
-		18C32A337793DBCE654A793D77773127 /* APAddressBookRefWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookRefWrapper.h; path = Pod/Core/Private/Wrapper/APAddressBookRefWrapper.h; sourceTree = "<group>"; };
-		18E8B40A08B79BC642D2EA3C1C68FAD5 /* APSocialServiceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSocialServiceHelper.m; path = Pod/Core/Private/Helpers/APSocialServiceHelper.m; sourceTree = "<group>"; };
-		1BA9A6842CA55DB0F65884F93AB64F33 /* APAddressBookExternalChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookExternalChangeDelegate.h; path = Pod/Core/Private/Routine/APAddressBookExternalChangeDelegate.h; sourceTree = "<group>"; };
-		1C15B639566B91970CA702C23A564980 /* APAddressBookRefWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookRefWrapper.m; path = Pod/Core/Private/Wrapper/APAddressBookRefWrapper.m; sourceTree = "<group>"; };
-		1D00282205B4EF87229C582EA2EDD310 /* APContactDataExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactDataExtractor.h; path = Pod/Core/Private/Extractors/APContactDataExtractor.h; sourceTree = "<group>"; };
-		1DEB64AE57463F46AA2067B4587E5F54 /* APSocialProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSocialProfile.m; path = Pod/Core/Public/Models/APSocialProfile.m; sourceTree = "<group>"; };
+		0BA3298C28B6C67F8320B5EE8529A73B /* APThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APThread.m; path = Pod/Core/Private/Thread/APThread.m; sourceTree = "<group>"; };
+		0D0AC484108D6FFA1BDD6C00FF16DC9D /* APAddressBookExternalChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookExternalChangeDelegate.h; path = Pod/Core/Private/Routine/APAddressBookExternalChangeDelegate.h; sourceTree = "<group>"; };
+		0DCBF36E69A89740AE7BFDBEF6CDA17E /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSDictionary+URLArguments.h"; path = "Foundation/GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		0EAE190FB27BFF3DFB3349C45C1C3AE0 /* APAddressBookBaseRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookBaseRoutine.h; path = Pod/Core/Private/Routine/Base/APAddressBookBaseRoutine.h; sourceTree = "<group>"; };
+		13F41BB34B1EFBC3CC0EA7F36CE42A8A /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
+		1471D76881007BE3F1DA351B37A987F1 /* APSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSource.m; path = Pod/Core/Public/Models/APSource.m; sourceTree = "<group>"; };
+		153535998E0AB792B4C7F99C55A8F6CF /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		15472169CE70E384F3E24F66E194CB9C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		1659A489E36390EF357CBD08284C01BD /* APAddressBook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APAddressBook-dummy.m"; sourceTree = "<group>"; };
+		171C0A2A2A6A270F7D7BEFC17FC65099 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		17238EFBBD1358D3AB5FC9B8AA487ACB /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		183D8E663E2B6DD17ED59BAB08F76D34 /* APSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSource.h; path = Pod/Core/Public/Models/APSource.h; sourceTree = "<group>"; };
+		1A45F417BCC61B4966F8516C9EA0477F /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		1D3C80F93C7373D262846B572B8487B6 /* APContactDataExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactDataExtractor.m; path = Pod/Core/Private/Extractors/APContactDataExtractor.m; sourceTree = "<group>"; };
 		223BD792801FE484A9E3811FE1503924 /* Pods-TwilioSms-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TwilioSms-umbrella.h"; sourceTree = "<group>"; };
-		2B42E9EBAE00CB3B01806A6D295A3609 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		2B8C7031BC3CB54660174405416BB306 /* APSocialProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSocialProfile.h; path = Pod/Core/Public/Models/APSocialProfile.h; sourceTree = "<group>"; };
-		2D3FA9D6C6229F1CFCF570C91BD62BF0 /* APAddressBook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APAddressBook-umbrella.h"; sourceTree = "<group>"; };
-		2F395B0A0FB4AD0F2F48DACB4CA454B9 /* APAddressBook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APAddressBook-dummy.m"; sourceTree = "<group>"; };
-		331A4E51DC10F69E4D983D59E35E62C5 /* APContactDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactDate.m; path = Pod/Core/Public/Models/APContactDate.m; sourceTree = "<group>"; };
-		34899C12E8819A85BDED6FAEED165298 /* APAddressBookAccessRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookAccessRoutine.m; path = Pod/Core/Private/Routine/APAddressBookAccessRoutine.m; sourceTree = "<group>"; };
-		35CB05FD1AA29FEB14AB7F0BA356645E /* APEmail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APEmail.h; path = Pod/Core/Public/Models/APEmail.h; sourceTree = "<group>"; };
-		39F1D25C2BAA5928DD37FE797C7DEC82 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		3C3CB4B34F797AB2030FB9FB0AEF3120 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		44DCD449C6C146EBCB9511A75683BFD1 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		24BC0B69DEA0E7BA2B140D21D7EEFD0F /* APAddressBookAccessRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookAccessRoutine.m; path = Pod/Core/Private/Routine/APAddressBookAccessRoutine.m; sourceTree = "<group>"; };
+		2525DD8B97DF84B2F4BEEC305B7164B9 /* APAddressBookExternalChangeRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookExternalChangeRoutine.h; path = Pod/Core/Private/Routine/APAddressBookExternalChangeRoutine.h; sourceTree = "<group>"; };
+		2788D876F784371023591C6CD01A50C3 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		2ACBAAEDDBAA6FD3B84B8411D3F208A6 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		2E298EFA633366CAD1C9040AD147E1CA /* APAddressBookAccessRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookAccessRoutine.h; path = Pod/Core/Private/Routine/APAddressBookAccessRoutine.h; sourceTree = "<group>"; };
+		2FB733C3CC114CDEC40DB013B7C65A5D /* APSocialProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSocialProfile.h; path = Pod/Core/Public/Models/APSocialProfile.h; sourceTree = "<group>"; };
+		309BCA510C142A30CDD420978FC92EEA /* APContactListBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactListBuilder.m; path = Pod/Core/Private/Builders/APContactListBuilder.m; sourceTree = "<group>"; };
+		30AAADB1763ED5DA99EBE36E91F3F904 /* APRelatedPerson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APRelatedPerson.h; path = Pod/Core/Public/Models/APRelatedPerson.h; sourceTree = "<group>"; };
+		3464C762BF819BCD93FD633C5ECF3C1C /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		34B4272731E2DA796AC920BDAC79649C /* APAddressBook-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "APAddressBook-Bridging.h"; path = "Pod/Swift/APAddressBook-Bridging.h"; sourceTree = "<group>"; };
+		34DEE302114C1ABFF418818480302354 /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugSelectorValidation.h; path = DebugUtils/GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
+		3533CE258A5E6C4425AA8F2EC0B17C7D /* APAddressBookRefWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookRefWrapper.m; path = Pod/Core/Private/Wrapper/APAddressBookRefWrapper.m; sourceTree = "<group>"; };
+		35E9C36899876A05210C6739BE8884F0 /* APPhone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APPhone.h; path = Pod/Core/Public/Models/APPhone.h; sourceTree = "<group>"; };
+		36132970E7DED883B2EF8178EFC638FB /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+URLArguments.m"; path = "Foundation/GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		3654821030988342186815C78DBFD2BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3680D55155F6C4321657A35C22F82961 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3728FA860007D5772D2EDD94158EDCB9 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		37A023EB8639B6EC026BDEF275243428 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EFDC5887CE407159437D0876654035C /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
+		43D19CBD07B89A92131E981D342C501D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43F417FB48402F3F713C7C5805394938 /* APAddressBookRefWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookRefWrapper.h; path = Pod/Core/Private/Wrapper/APAddressBookRefWrapper.h; sourceTree = "<group>"; };
+		43FFCD0DC59F17EA44343250CB4E0C4C /* APAddressBookExternalChangeRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookExternalChangeRoutine.m; path = Pod/Core/Private/Routine/APAddressBookExternalChangeRoutine.m; sourceTree = "<group>"; };
+		45DE23DD28446B61CDB71E484854C3DA /* APRecordDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APRecordDate.h; path = Pod/Core/Public/Models/APRecordDate.h; sourceTree = "<group>"; };
 		4678456FB7F0DB670A769BEE783D99C0 /* Pods-TwilioSms-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwilioSms-frameworks.sh"; sourceTree = "<group>"; };
-		49DCC7649821FAC6A63DE635A7B1CA47 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		4DC50DB5346038E7F8A30400BD452072 /* APContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContact.h; path = Pod/Core/Public/Models/APContact.h; sourceTree = "<group>"; };
-		4DF4378F3EB4F2F8566988F32B616186 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E4AF3A734592FF967DDEE3A22A1BE27 /* APAddressBookContactsRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookContactsRoutine.m; path = Pod/Core/Private/Routine/APAddressBookContactsRoutine.m; sourceTree = "<group>"; };
-		5273889E58B18A9F4F247BA229306D73 /* APImageExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APImageExtractor.h; path = Pod/Core/Private/Extractors/APImageExtractor.h; sourceTree = "<group>"; };
-		57017ED8CC19B213B373730CD79B4360 /* APName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APName.m; path = Pod/Core/Public/Models/APName.m; sourceTree = "<group>"; };
-		57A8EBC3A0BCB54F70A139698E55025F /* APAddressBookExternalChangeRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookExternalChangeRoutine.m; path = Pod/Core/Private/Routine/APAddressBookExternalChangeRoutine.m; sourceTree = "<group>"; };
-		57C5A7869056B2C7EB2911B16EB1AAB7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59CEF91C684719E0CC64B9FCAA802972 /* APJob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APJob.m; path = Pod/Core/Public/Models/APJob.m; sourceTree = "<group>"; };
-		5A42F1F3368B4CDC97F2B079AC6EC8C6 /* APTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APTypes.h; path = Pod/Core/Public/Models/APTypes.h; sourceTree = "<group>"; };
-		5A6DB92E53DD13AEBA4F75562FF77740 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		49346300DED31F48D1A4B58179FA244A /* APContactDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactDate.h; path = Pod/Core/Public/Models/APContactDate.h; sourceTree = "<group>"; };
+		4A8648CAB1A2078B2E65B5DBBA83F5BC /* APAddressBookBaseRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookBaseRoutine.m; path = Pod/Core/Private/Routine/Base/APAddressBookBaseRoutine.m; sourceTree = "<group>"; };
+		4C2BD396C7804CC79E9EDC03D3EE165A /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		521C5F35D4BCEB2306C97136BC3BC414 /* APSocialServiceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSocialServiceHelper.m; path = Pod/Core/Private/Helpers/APSocialServiceHelper.m; sourceTree = "<group>"; };
+		53CA96D5B0155012304E149579C6E150 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		5AC51F43A4A0EFCEB1C60CB363A99797 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		5CF81175F249368B015EF72C419CF9D5 /* Pods-TwilioSms-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwilioSms-resources.sh"; sourceTree = "<group>"; };
-		65C96B7D711D8C31801D65BD995A8C51 /* APContactDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactDate.h; path = Pod/Core/Public/Models/APContactDate.h; sourceTree = "<group>"; };
-		66793A27A4A32D4D3C91B1150C568360 /* APContactListBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactListBuilder.h; path = Pod/Core/Private/Builders/APContactListBuilder.h; sourceTree = "<group>"; };
-		6A08B1CD40515A1372D1B6EB6E47523A /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		6BF65D78CAF6AEF91119739BF23BBD3B /* APAddressBook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APAddressBook-prefix.pch"; sourceTree = "<group>"; };
+		5D62F4F7E97E6ACF319B718E8F11E7AE /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
+		60B5B787B53BC8E40DD5BA649F9B386E /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		60C8D2E31F26CD8034A2FCA2DE1B28BF /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		60DFC1C50719B04BFBE36584E0A659B0 /* APAddressBook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APAddressBook-umbrella.h"; sourceTree = "<group>"; };
+		62961A6CFEE0BAB363040B13926F7AE6 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		64823C2E9F0D8618E49C4D6FEEE41041 /* APSocialProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSocialProfile.m; path = Pod/Core/Public/Models/APSocialProfile.m; sourceTree = "<group>"; };
+		66F6DFC8D7ED6566BDA061144AFB5DE8 /* APContactDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactDate.m; path = Pod/Core/Public/Models/APContactDate.m; sourceTree = "<group>"; };
+		6859062699FCF6D12DF51A4287AC0402 /* APName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APName.h; path = Pod/Core/Public/Models/APName.h; sourceTree = "<group>"; };
+		68FEB3C24073FC2C556F101984C842D2 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		6F87A52551307C5D82F4FE67C2566BEC /* Pods-TwilioSms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwilioSms.debug.xcconfig"; sourceTree = "<group>"; };
-		72BFACF6CFE4C0889DDA039A0F6BAD3A /* APImageExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APImageExtractor.m; path = Pod/Core/Private/Extractors/APImageExtractor.m; sourceTree = "<group>"; };
-		744B862D89D138AF1BBBA2011BA01F1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7ECA0C2DD183D4F93F7A85235BE1F52F /* APPhone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APPhone.h; path = Pod/Core/Public/Models/APPhone.h; sourceTree = "<group>"; };
+		73FA500265CFC811300B1ED6D77F310E /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		78C3AFB88A77F5C2A99CAAF8C795AD07 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		79E358FF4AF57D1734C397253EC1BB2F /* APAddressBook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APAddressBook.xcconfig; sourceTree = "<group>"; };
+		7A4F211694429B15BF9517FF50A5ADC9 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		7C49DDF1DF923D99F20037110210AF1D /* Pods_TwilioSms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TwilioSms.framework; path = "Pods-TwilioSms.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8E2F44FD5325E51EAD49C26F25C3C4 /* APContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContact.m; path = Pod/Core/Public/Models/APContact.m; sourceTree = "<group>"; };
+		7EC67E51A0A5E04FC7E1282E9F76E917 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
 		7FA804BC4DCC2B475BEB32004D1426ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CDEB74A7717C1B006090E04A8BEA124 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		7FD7858A22517ECDF3CFB3802661482F /* APAddressBookContactsRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookContactsRoutine.m; path = Pod/Core/Private/Routine/APAddressBookContactsRoutine.m; sourceTree = "<group>"; };
+		80BA91BC8B3DE51DB7920AA6C8C5D3E9 /* APAddressBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = APAddressBook.framework; path = APAddressBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81CF34F6BDEA482EA3289375B946C349 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		887D4E639B66A728A5D2238E04043256 /* APImageExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APImageExtractor.h; path = Pod/Core/Private/Extractors/APImageExtractor.h; sourceTree = "<group>"; };
+		8881EA53842588A1D2B17FE1E5B19C0B /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		8AD4D54B28A493234ADDBF94C8435E03 /* APContactBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactBuilder.m; path = Pod/Core/Private/Builders/APContactBuilder.m; sourceTree = "<group>"; };
+		8B47C0F777FA375C92A09C8880CE98AD /* APEmail.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APEmail.m; path = Pod/Core/Public/Models/APEmail.m; sourceTree = "<group>"; };
 		907894B3E4A57C45B19F2D1B58AA848D /* Pods-TwilioSms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwilioSms.release.xcconfig"; sourceTree = "<group>"; };
-		9160750EA9368D808C3AF51A1F531946 /* APThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APThread.m; path = Pod/Core/Private/Thread/APThread.m; sourceTree = "<group>"; };
+		91D20B07160996291D790CD5C152459E /* APContactListBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactListBuilder.h; path = Pod/Core/Private/Builders/APContactListBuilder.h; sourceTree = "<group>"; };
+		92E0447B9CDED937AFCF935AE40B6752 /* APJob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APJob.m; path = Pod/Core/Public/Models/APJob.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96F52F9FE3DC51AEF8DCC2EF67469797 /* APSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSource.h; path = Pod/Core/Public/Models/APSource.h; sourceTree = "<group>"; };
-		9A0BAC9842BD6A72AF4157150114E9C0 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		9BA2F2091D9BA36FB72F846A3FB3FF29 /* APAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddress.m; path = Pod/Core/Public/Models/APAddress.m; sourceTree = "<group>"; };
+		974A3E7657256079AAD79768B047F404 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		98A6A0E521E3A03B5280B39C3748FD22 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		9D3DAC9F7C9DC08423E4BFA378E84F6E /* Pods-TwilioSms-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwilioSms-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A1FE56A0BD681F8E8012279CCA4B3587 /* APAddressBookContactsRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookContactsRoutine.h; path = Pod/Core/Private/Routine/APAddressBookContactsRoutine.h; sourceTree = "<group>"; };
-		A25AFC823FAEE41D4ECE22643105DA5C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		A2A36B84A634CA6FCA928823F4FB637C /* APAddressBook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBook.m; path = Pod/Core/Public/APAddressBook.m; sourceTree = "<group>"; };
-		A68FA86DDCB6A60117302792982118D6 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		A9BF0392548E7D7781FCACF262C07500 /* APEmail.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APEmail.m; path = Pod/Core/Public/Models/APEmail.m; sourceTree = "<group>"; };
-		AEE820A6522FA71A6A598F44ACD8F778 /* APRecordDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APRecordDate.h; path = Pod/Core/Public/Models/APRecordDate.h; sourceTree = "<group>"; };
-		AF34B8E5D0BF6F4BACFFFB167E99E5BC /* APAddressBookBaseRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookBaseRoutine.h; path = Pod/Core/Private/Routine/Base/APAddressBookBaseRoutine.h; sourceTree = "<group>"; };
-		B0CC5247ADC26B810B2B120B4B647AF8 /* Pods_TwilioSms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TwilioSms.framework; path = "Pods-TwilioSms.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1BFBD58C2F59CFB7C05C83C7D7750B8 /* APRelatedPerson.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APRelatedPerson.m; path = Pod/Core/Public/Models/APRelatedPerson.m; sourceTree = "<group>"; };
-		B2B575AEA5866DEF5A81AEA256C4E006 /* APAddressBook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBook.h; path = Pod/Core/Public/APAddressBook.h; sourceTree = "<group>"; };
-		B35C78DED1D6289746311A2ACCBDE7B4 /* APAddressBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = APAddressBook.framework; path = APAddressBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4DFE9E45AFED3AC7795FD44C79557AD /* APName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APName.h; path = Pod/Core/Public/Models/APName.h; sourceTree = "<group>"; };
-		B59832732247B2DD8F6DA549F997C07A /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		B70A6F1C563E148829F5DC095BD8A47B /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		B8E295BC95D64791173C049B7D176B7B /* APAddressBookBaseRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookBaseRoutine.m; path = Pod/Core/Private/Routine/Base/APAddressBookBaseRoutine.m; sourceTree = "<group>"; };
-		B9CDD436E33C35A1F20A949A8D757CFF /* APContactDataExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactDataExtractor.m; path = Pod/Core/Private/Extractors/APContactDataExtractor.m; sourceTree = "<group>"; };
-		BED1C530C20F5DDD037635E9C058E922 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		BF96524136CA3CDD8E94917555F2C9F4 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		C05CC963FA0C75B59AE20D7DE2BF94FF /* APJob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APJob.h; path = Pod/Core/Public/Models/APJob.h; sourceTree = "<group>"; };
-		C0844E2C08A74D297FB57350BE418A81 /* APAddressBook-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "APAddressBook-Bridging.h"; path = "Pod/Swift/APAddressBook-Bridging.h"; sourceTree = "<group>"; };
-		C0D0A8B8219ECBD070BF9CB8B93680B5 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		C2423BAE17F15434669463E662637F92 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		C339F24FF2DDC1ADEC97A11F8FEF0B1F /* APRelatedPerson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APRelatedPerson.h; path = Pod/Core/Public/Models/APRelatedPerson.h; sourceTree = "<group>"; };
-		C50395DC6E2110F69EC4EB67F5F64D8A /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		9E659850B987BC665D3E63CE133EB1FB /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		9F9021A362C2485E36567DE66CC1491D /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		A0B3653ED7DE794E86EC0E2FF2EDF111 /* APAddressBookContactsRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookContactsRoutine.h; path = Pod/Core/Private/Routine/APAddressBookContactsRoutine.h; sourceTree = "<group>"; };
+		A5D859632E2CB0C7E42B94339D162B7E /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		A7302578A36BBC01C9244904AD9E46E5 /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSDictionary+URLArguments.m"; path = "Foundation/GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
+		A762811250A0FC285AF150FA9DDC26AC /* APAddressBook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = APAddressBook.modulemap; sourceTree = "<group>"; };
+		A77BC9DCCBBCF87DEDD0D95F8F741F85 /* APRelatedPerson.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APRelatedPerson.m; path = Pod/Core/Public/Models/APRelatedPerson.m; sourceTree = "<group>"; };
+		AA4014BA29FDE1988C9D385958B086B3 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		AA67ED26A1518813649A45DC97157552 /* APAddressBook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBook.h; path = Pod/Core/Public/APAddressBook.h; sourceTree = "<group>"; };
+		AC08C6A74087DAAC692EDDEC87DBBF40 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		B01C595C567F86F75AD1A94B2092FCC1 /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugThreadValidation.h; path = DebugUtils/GTMDebugThreadValidation.h; sourceTree = "<group>"; };
+		B0E3692F3E2EE9A2ACF060D2322B9E24 /* APJob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APJob.h; path = Pod/Core/Public/Models/APJob.h; sourceTree = "<group>"; };
+		B168D051DB31FBD81AE93C14CCA9069B /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A9BA9D000E41357D8B2F54F17279E4 /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
+		B683B5C6938BE8D95EF772F6E1BFB37F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		B6AA7FFA9FB6C6B67F761F4319B427EA /* GTMMethodCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMethodCheck.h; path = DebugUtils/GTMMethodCheck.h; sourceTree = "<group>"; };
+		B6BE36EAC1ECAC8370D7C8E3E57E3412 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+URLArguments.h"; path = "Foundation/GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		B99494D6DEC997115BFC46AA1B273538 /* APContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContact.h; path = Pod/Core/Public/Models/APContact.h; sourceTree = "<group>"; };
+		BB4C61B82BB6F01ABAEEA1DA1E988558 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		BE0D8A0424FC335499C157785558D118 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		C192C65E17F6F4A3B3C327B6B674D6B3 /* APPhone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APPhone.m; path = Pod/Core/Public/Models/APPhone.m; sourceTree = "<group>"; };
+		C42CDB433224FB9D2A1EC41D6EA28A54 /* APAddressBook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBook.m; path = Pod/Core/Public/APAddressBook.m; sourceTree = "<group>"; };
 		C5DFBDD14536D09B8ACF1C1AD31C431B /* Pods-TwilioSms.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TwilioSms.modulemap"; sourceTree = "<group>"; };
-		C5DFBEE7E1528AD0519A4232243429F4 /* APAddressBookAccessRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookAccessRoutine.h; path = Pod/Core/Private/Routine/APAddressBookAccessRoutine.h; sourceTree = "<group>"; };
-		C5F7CAE5C3E7B8BDDDBB36B95DF186FE /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
-		C7DE13B6DD803769F0DBDD2185E0F225 /* APAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddress.h; path = Pod/Core/Public/Models/APAddress.h; sourceTree = "<group>"; };
-		C7FD6516E7A4CA55DA40F2C5933E30E6 /* APContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContact.m; path = Pod/Core/Public/Models/APContact.m; sourceTree = "<group>"; };
-		C9914C46E84C0EC4B0DC5560335E5C96 /* APRecordDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APRecordDate.m; path = Pod/Core/Public/Models/APRecordDate.m; sourceTree = "<group>"; };
-		CBF614D902361B767928EFD7811AE2FD /* APContactListBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactListBuilder.m; path = Pod/Core/Private/Builders/APContactListBuilder.m; sourceTree = "<group>"; };
-		D30DAACAFED3F3676304D3E15DDE42BF /* APThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APThread.h; path = Pod/Core/Private/Thread/APThread.h; sourceTree = "<group>"; };
-		D65A6E10B7615348CA35BBE7DA9A91CE /* APSocialServiceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSocialServiceHelper.h; path = Pod/Core/Private/Helpers/APSocialServiceHelper.h; sourceTree = "<group>"; };
-		D7312FD44CF4D30D6019E2A356DBE7B1 /* APPhone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APPhone.m; path = Pod/Core/Public/Models/APPhone.m; sourceTree = "<group>"; };
-		D9DA7C4DC92E015D593FB520B6D8351E /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		DA84255C9296744CD4CB91D9ECC7F1C7 /* APAddressBookExternalChangeRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookExternalChangeRoutine.h; path = Pod/Core/Private/Routine/APAddressBookExternalChangeRoutine.h; sourceTree = "<group>"; };
-		DC06BBDA080B41F694C637D8E5B96F97 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		DFEEDDE7BDBFF861B66701C58138703F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		F1734EB7FF7CAEE9E6180B92DCE48BD6 /* APContactBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactBuilder.m; path = Pod/Core/Private/Builders/APContactBuilder.m; sourceTree = "<group>"; };
+		C689B8313F94B45D3B555B803A5518A5 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		C7A817F7956BE07567A7BABBEE5F57FE /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		C8A1E12B19B2EAE8074E50318AFC4F5E /* APAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddress.m; path = Pod/Core/Public/Models/APAddress.m; sourceTree = "<group>"; };
+		CA03C3F5000D7150B531944F2E13D7D8 /* APAddressBook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APAddressBook-prefix.pch"; sourceTree = "<group>"; };
+		D056BF2F4CEBB3ADF047A08D90D6EA48 /* APEmail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APEmail.h; path = Pod/Core/Public/Models/APEmail.h; sourceTree = "<group>"; };
+		D2E43548881A6092EA526112B53C580C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		D624333F5DB51CC08BD614C64BE9BE68 /* APName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APName.m; path = Pod/Core/Public/Models/APName.m; sourceTree = "<group>"; };
+		D6E637C1E110A472E75C46BD9F1E0508 /* APTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APTypes.h; path = Pod/Core/Public/Models/APTypes.h; sourceTree = "<group>"; };
+		D7C023D4AAA4F28CC4B1DFB11A4DFEC5 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		DDBC911288EE9D578A4AD76AF65B23A8 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		DECF77117F2F16221F8A76FFDE15662A /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		E6329EACCAEFF470306EC37C7746EC7A /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		E8617DCC31ACCD5F19973B53F5B2690C /* APSocialServiceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSocialServiceHelper.h; path = Pod/Core/Private/Helpers/APSocialServiceHelper.h; sourceTree = "<group>"; };
+		E8A94AE3235AE49138CBDDAFF74A98C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8397EB2E138F83A496817171C7A5B7 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		ED038E5213A0B0B19FAAC90C3B75AACA /* APThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APThread.h; path = Pod/Core/Private/Thread/APThread.h; sourceTree = "<group>"; };
+		EEC2D66D58AE1D1C05BD6CE5B7292145 /* APContactDataExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactDataExtractor.h; path = Pod/Core/Private/Extractors/APContactDataExtractor.h; sourceTree = "<group>"; };
+		EFB3BD89724E2F8C9E4BAA1C38EA6B60 /* APContactBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactBuilder.h; path = Pod/Core/Private/Builders/APContactBuilder.h; sourceTree = "<group>"; };
+		F13B7D96A4C469B9028CFD3834A17AAA /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		F23F65515FE41E101292F368210FA3F6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		F2EF84E02465FC06155E4AE4A7BD6DDC /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		F32F7A9CC164F35C5BE2FF39BF1D14B5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		F62E698E74D134F7216B7CB02D5C10B7 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		F8E3EBC874D683C1C2A7C9C7E570163D /* Pods-TwilioSms-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TwilioSms-dummy.m"; sourceTree = "<group>"; };
-		F908D185DF5A7A5D272BDC2666D74A15 /* APAddressBook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APAddressBook.xcconfig; sourceTree = "<group>"; };
-		FCB37987945CFABCE2D6CF218DE4B7A3 /* APAddressBook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = APAddressBook.modulemap; sourceTree = "<group>"; };
+		F9A331ABE8745C56C068DF3902211DA1 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		F9FA8007DD58EEA07CD3C8488B5F9584 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		FC88DECD4C4979515FA6D4BFD2365978 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		FCF970BFF3AA27026B0381AB6AE7344C /* APRecordDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APRecordDate.m; path = Pod/Core/Public/Models/APRecordDate.m; sourceTree = "<group>"; };
+		FD19EB43D2F9873D4A0F778FD5E455D4 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		FFBF3B74DED222529C228ADF2084BD11 /* APAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddress.h; path = Pod/Core/Public/Models/APAddress.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		56B82DFE4AD73359631E6F17BA94F1F9 /* Frameworks */ = {
+		6AE88E96161DE195EAAF0A3B6375EA50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E514B14A77B77CB08C9BB8A2CCBB8764 /* Foundation.framework in Frameworks */,
+				1F9B999DFAA1052294448B64C77434B1 /* Foundation.framework in Frameworks */,
+				65B56BD3DBC9B81BB008219D0BA735A9 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +295,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB2FD04E98E8D08B812CFAD3603A106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967551D370060AE0F4BC86BA2FE66E6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EC506467791C30FE6F011786C48572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4FA66A0CCFA5559E3D891B80DDFD24 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +326,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0637B27FB47CBDC48E47A0CEAAC319CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81CF34F6BDEA482EA3289375B946C349 /* GoogleToolboxForMac.modulemap */,
+				3464C762BF819BCD93FD633C5ECF3C1C /* GoogleToolboxForMac.xcconfig */,
+				153535998E0AB792B4C7F99C55A8F6CF /* GoogleToolboxForMac-dummy.m */,
+				2788D876F784371023591C6CD01A50C3 /* GoogleToolboxForMac-prefix.pch */,
+				7EC67E51A0A5E04FC7E1282E9F76E917 /* GoogleToolboxForMac-umbrella.h */,
+				3654821030988342186815C78DBFD2BA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		08BC7E20619301E2C99418073C2A030E /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				4C2BD396C7804CC79E9EDC03D3EE165A /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		0F456CFF70E7E98FAB7A6BD4F8595EA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				993706511B3DBC792AB6A8208B1EE2C4 /* Alamofire */,
+				2812E124B6BDB4B550D716FE64914900 /* APAddressBook */,
+				A9F63C1DDC32BFB6C4AD64195DD4D44F /* Firebase */,
+				3AE9A6515A9DAC3745CD5B1DB83FA68F /* FirebaseAnalytics */,
+				7BBF9147867858B8B65BDF060B4F0F0C /* FirebaseAuth */,
+				F199AEEEB8E79898566D3BD5F4120EEB /* FirebaseCore */,
+				2AE790529DB972D3676BA786D5875598 /* FirebaseDatabase */,
+				8F1731D58AF4C2AA2A9B01F424CCEE17 /* FirebaseInstanceID */,
+				888C1F52BDB7A04DF345B4203617A00F /* GoogleInterchangeUtilities */,
+				20EFC675661CE4CCDFF3E6309CC88DDF /* GoogleSymbolUtilities */,
+				B5A5AD9D0E00C6AEF794A667D0B7BDE9 /* GoogleToolboxForMac */,
+				9B29BDE884D59DCAC8FB44DC061FA4CE /* GTMSessionFetcher */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79A5B5034D23A4A2371018F1F0A1839 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13242975EED92AD55576D33DD619871A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73FA500265CFC811300B1ED6D77F310E /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F406DF6BCA705FCCE71422AE84D078F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F9021A362C2485E36567DE66CC1491D /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20EFC675661CE4CCDFF3E6309CC88DDF /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				BCA696C209D47F69A57A77A1B5D818C2 /* Frameworks */,
+			);
+			name = GoogleSymbolUtilities;
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
 		2166F641BB475B09E67E72F68FC466E0 /* Pods-TwilioSms */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,71 +418,112 @@
 			path = "Target Support Files/Pods-TwilioSms";
 			sourceTree = "<group>";
 		};
-		355514836F74A81C6EB3F61505B96BB0 /* Support Files */ = {
+		2812E124B6BDB4B550D716FE64914900 /* APAddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				FCB37987945CFABCE2D6CF218DE4B7A3 /* APAddressBook.modulemap */,
-				F908D185DF5A7A5D272BDC2666D74A15 /* APAddressBook.xcconfig */,
-				2F395B0A0FB4AD0F2F48DACB4CA454B9 /* APAddressBook-dummy.m */,
-				6BF65D78CAF6AEF91119739BF23BBD3B /* APAddressBook-prefix.pch */,
-				2D3FA9D6C6229F1CFCF570C91BD62BF0 /* APAddressBook-umbrella.h */,
-				4DF4378F3EB4F2F8566988F32B616186 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/APAddressBook";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ED17446C63B200A9CC543CC0A1861F95 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		555337A8F03409FC4EA8C12584C8D31E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DC06BBDA080B41F694C637D8E5B96F97 /* Alamofire.modulemap */,
-				B70A6F1C563E148829F5DC095BD8A47B /* Alamofire.xcconfig */,
-				5A6DB92E53DD13AEBA4F75562FF77740 /* Alamofire-dummy.m */,
-				BED1C530C20F5DDD037635E9C058E922 /* Alamofire-prefix.pch */,
-				D9DA7C4DC92E015D593FB520B6D8351E /* Alamofire-umbrella.h */,
-				744B862D89D138AF1BBBA2011BA01F1D /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		579EB9AE14EA00D6B20F6B79E2A40DF2 /* APAddressBook */ = {
-			isa = PBXGroup;
-			children = (
-				90F6FCA331D9C0453F30242C21C2CD16 /* Core */,
-				355514836F74A81C6EB3F61505B96BB0 /* Support Files */,
-				A1FB9742D21C7BDC7BEDC23587908E00 /* Swift */,
+				BD01454CB1BB71D8CA6D7CD0FF028538 /* Core */,
+				A20B82C00FC7AB20AA62C7A0A6A125AF /* Support Files */,
+				DCFA933C1111A041371E77DE9B8F6AB6 /* Swift */,
 			);
 			name = APAddressBook;
 			path = APAddressBook;
 			sourceTree = "<group>";
 		};
-		7401EF99BA804663CC0F44FDA5E269AC /* Pods */ = {
+		2AE790529DB972D3676BA786D5875598 /* FirebaseDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				F858EEDD4A720C06234A1D23E7BAFC43 /* Alamofire */,
-				579EB9AE14EA00D6B20F6B79E2A40DF2 /* APAddressBook */,
+				1F406DF6BCA705FCCE71422AE84D078F /* Frameworks */,
 			);
-			name = Pods;
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		3AE9A6515A9DAC3745CD5B1DB83FA68F /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				818A592F1895B5A18C695B6B010F5582 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		3D515974D094525F9FF66CE4BCC87793 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37A023EB8639B6EC026BDEF275243428 /* Alamofire.framework */,
+				80BA91BC8B3DE51DB7920AA6C8C5D3E9 /* APAddressBook.framework */,
+				B168D051DB31FBD81AE93C14CCA9069B /* GoogleToolboxForMac.framework */,
+				3680D55155F6C4321657A35C22F82961 /* GTMSessionFetcher.framework */,
+				7C49DDF1DF923D99F20037110210AF1D /* Pods_TwilioSms.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63646D3E0A718FB94537563779EC7C17 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AC51F43A4A0EFCEB1C60CB363A99797 /* Alamofire.modulemap */,
+				F13B7D96A4C469B9028CFD3834A17AAA /* Alamofire.xcconfig */,
+				C7A817F7956BE07567A7BABBEE5F57FE /* Alamofire-dummy.m */,
+				F9FA8007DD58EEA07CD3C8488B5F9584 /* Alamofire-prefix.pch */,
+				F62E698E74D134F7216B7CB02D5C10B7 /* Alamofire-umbrella.h */,
+				089EE3C51D9B577CC5A8EBE3A2773700 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		64DB531C2A4A2F88F656031F415E51F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60C8D2E31F26CD8034A2FCA2DE1B28BF /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BBF9147867858B8B65BDF060B4F0F0C /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				8E591DC4A69BCF27C4150AA2651E15A2 /* Frameworks */,
+			);
+			name = FirebaseAuth;
+			path = FirebaseAuth;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				7401EF99BA804663CC0F44FDA5E269AC /* Pods */,
-				E9ED0D9CC3741451E466D5B02DB5C7B6 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				0F456CFF70E7E98FAB7A6BD4F8595EA7 /* Pods */,
+				3D515974D094525F9FF66CE4BCC87793 /* Products */,
 				8CF4C72D23F0166A2C7D70334F8B603D /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		818A592F1895B5A18C695B6B010F5582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA4014BA29FDE1988C9D385958B086B3 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		888C1F52BDB7A04DF345B4203617A00F /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				89EE4DEF790418130E2122C11C5A7F3E /* Frameworks */,
+			);
+			name = GoogleInterchangeUtilities;
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		89EE4DEF790418130E2122C11C5A7F3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD19EB43D2F9873D4A0F778FD5E455D4 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8CF4C72D23F0166A2C7D70334F8B603D /* Targets Support Files */ = {
@@ -321,112 +534,259 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		90F6FCA331D9C0453F30242C21C2CD16 /* Core */ = {
+		8E591DC4A69BCF27C4150AA2651E15A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C7DE13B6DD803769F0DBDD2185E0F225 /* APAddress.h */,
-				9BA2F2091D9BA36FB72F846A3FB3FF29 /* APAddress.m */,
-				B2B575AEA5866DEF5A81AEA256C4E006 /* APAddressBook.h */,
-				A2A36B84A634CA6FCA928823F4FB637C /* APAddressBook.m */,
-				C5DFBEE7E1528AD0519A4232243429F4 /* APAddressBookAccessRoutine.h */,
-				34899C12E8819A85BDED6FAEED165298 /* APAddressBookAccessRoutine.m */,
-				AF34B8E5D0BF6F4BACFFFB167E99E5BC /* APAddressBookBaseRoutine.h */,
-				B8E295BC95D64791173C049B7D176B7B /* APAddressBookBaseRoutine.m */,
-				A1FE56A0BD681F8E8012279CCA4B3587 /* APAddressBookContactsRoutine.h */,
-				4E4AF3A734592FF967DDEE3A22A1BE27 /* APAddressBookContactsRoutine.m */,
-				1BA9A6842CA55DB0F65884F93AB64F33 /* APAddressBookExternalChangeDelegate.h */,
-				DA84255C9296744CD4CB91D9ECC7F1C7 /* APAddressBookExternalChangeRoutine.h */,
-				57A8EBC3A0BCB54F70A139698E55025F /* APAddressBookExternalChangeRoutine.m */,
-				18C32A337793DBCE654A793D77773127 /* APAddressBookRefWrapper.h */,
-				1C15B639566B91970CA702C23A564980 /* APAddressBookRefWrapper.m */,
-				4DC50DB5346038E7F8A30400BD452072 /* APContact.h */,
-				C7FD6516E7A4CA55DA40F2C5933E30E6 /* APContact.m */,
-				0E475A59D588DAD2E5E5F73C8D627836 /* APContactBuilder.h */,
-				F1734EB7FF7CAEE9E6180B92DCE48BD6 /* APContactBuilder.m */,
-				1D00282205B4EF87229C582EA2EDD310 /* APContactDataExtractor.h */,
-				B9CDD436E33C35A1F20A949A8D757CFF /* APContactDataExtractor.m */,
-				65C96B7D711D8C31801D65BD995A8C51 /* APContactDate.h */,
-				331A4E51DC10F69E4D983D59E35E62C5 /* APContactDate.m */,
-				66793A27A4A32D4D3C91B1150C568360 /* APContactListBuilder.h */,
-				CBF614D902361B767928EFD7811AE2FD /* APContactListBuilder.m */,
-				35CB05FD1AA29FEB14AB7F0BA356645E /* APEmail.h */,
-				A9BF0392548E7D7781FCACF262C07500 /* APEmail.m */,
-				5273889E58B18A9F4F247BA229306D73 /* APImageExtractor.h */,
-				72BFACF6CFE4C0889DDA039A0F6BAD3A /* APImageExtractor.m */,
-				C05CC963FA0C75B59AE20D7DE2BF94FF /* APJob.h */,
-				59CEF91C684719E0CC64B9FCAA802972 /* APJob.m */,
-				B4DFE9E45AFED3AC7795FD44C79557AD /* APName.h */,
-				57017ED8CC19B213B373730CD79B4360 /* APName.m */,
-				7ECA0C2DD183D4F93F7A85235BE1F52F /* APPhone.h */,
-				D7312FD44CF4D30D6019E2A356DBE7B1 /* APPhone.m */,
-				AEE820A6522FA71A6A598F44ACD8F778 /* APRecordDate.h */,
-				C9914C46E84C0EC4B0DC5560335E5C96 /* APRecordDate.m */,
-				C339F24FF2DDC1ADEC97A11F8FEF0B1F /* APRelatedPerson.h */,
-				B1BFBD58C2F59CFB7C05C83C7D7750B8 /* APRelatedPerson.m */,
-				2B8C7031BC3CB54660174405416BB306 /* APSocialProfile.h */,
-				1DEB64AE57463F46AA2067B4587E5F54 /* APSocialProfile.m */,
-				D65A6E10B7615348CA35BBE7DA9A91CE /* APSocialServiceHelper.h */,
-				18E8B40A08B79BC642D2EA3C1C68FAD5 /* APSocialServiceHelper.m */,
-				96F52F9FE3DC51AEF8DCC2EF67469797 /* APSource.h */,
-				0DB385EE4FA35ACEB12947E6983CBF56 /* APSource.m */,
-				D30DAACAFED3F3676304D3E15DDE42BF /* APThread.h */,
-				9160750EA9368D808C3AF51A1F531946 /* APThread.m */,
-				5A42F1F3368B4CDC97F2B079AC6EC8C6 /* APTypes.h */,
+				089ED93AC16E04C4627E151E768D5486 /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F1731D58AF4C2AA2A9B01F424CCEE17 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				EA8397EB2E138F83A496817171C7A5B7 /* FIRInstanceID.h */,
+				64DB531C2A4A2F88F656031F415E51F7 /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		93E6A9B5F2DB7E68D5BC88FF56AACAA1 /* NSString+URLArguments */ = {
+			isa = PBXGroup;
+			children = (
+				B6BE36EAC1ECAC8370D7C8E3E57E3412 /* GTMNSString+URLArguments.h */,
+				36132970E7DED883B2EF8178EFC638FB /* GTMNSString+URLArguments.m */,
+			);
+			name = "NSString+URLArguments";
+			sourceTree = "<group>";
+		};
+		993706511B3DBC792AB6A8208B1EE2C4 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				98A6A0E521E3A03B5280B39C3748FD22 /* AFError.swift */,
+				78C3AFB88A77F5C2A99CAAF8C795AD07 /* Alamofire.swift */,
+				15472169CE70E384F3E24F66E194CB9C /* DispatchQueue+Alamofire.swift */,
+				065B13BBAF4BC2937F2F3A10F91D0DA3 /* MultipartFormData.swift */,
+				C689B8313F94B45D3B555B803A5518A5 /* NetworkReachabilityManager.swift */,
+				8881EA53842588A1D2B17FE1E5B19C0B /* Notifications.swift */,
+				3728FA860007D5772D2EDD94158EDCB9 /* ParameterEncoding.swift */,
+				B683B5C6938BE8D95EF772F6E1BFB37F /* Request.swift */,
+				FC88DECD4C4979515FA6D4BFD2365978 /* Response.swift */,
+				17238EFBBD1358D3AB5FC9B8AA487ACB /* ResponseSerialization.swift */,
+				D2E43548881A6092EA526112B53C580C /* Result.swift */,
+				DDBC911288EE9D578A4AD76AF65B23A8 /* ServerTrustPolicy.swift */,
+				62961A6CFEE0BAB363040B13926F7AE6 /* SessionDelegate.swift */,
+				68FEB3C24073FC2C556F101984C842D2 /* SessionManager.swift */,
+				F23F65515FE41E101292F368210FA3F6 /* TaskDelegate.swift */,
+				F9A331ABE8745C56C068DF3902211DA1 /* Timeline.swift */,
+				2ACBAAEDDBAA6FD3B84B8411D3F208A6 /* Validation.swift */,
+				63646D3E0A718FB94537563779EC7C17 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		9B29BDE884D59DCAC8FB44DC061FA4CE /* GTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				B52798FFF4DF2DE8D59752CA8EFC68BE /* Core */,
+				D09A82DE0688E955A246324B1235267E /* Support Files */,
+			);
+			name = GTMSessionFetcher;
+			path = GTMSessionFetcher;
+			sourceTree = "<group>";
+		};
+		A04ECEB47E145FE30E8334E427BD3117 /* DebugUtils */ = {
+			isa = PBXGroup;
+			children = (
+				34DEE302114C1ABFF418818480302354 /* GTMDebugSelectorValidation.h */,
+				B01C595C567F86F75AD1A94B2092FCC1 /* GTMDebugThreadValidation.h */,
+				B6AA7FFA9FB6C6B67F761F4319B427EA /* GTMMethodCheck.h */,
+			);
+			name = DebugUtils;
+			sourceTree = "<group>";
+		};
+		A20B82C00FC7AB20AA62C7A0A6A125AF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A762811250A0FC285AF150FA9DDC26AC /* APAddressBook.modulemap */,
+				79E358FF4AF57D1734C397253EC1BB2F /* APAddressBook.xcconfig */,
+				1659A489E36390EF357CBD08284C01BD /* APAddressBook-dummy.m */,
+				CA03C3F5000D7150B531944F2E13D7D8 /* APAddressBook-prefix.pch */,
+				60DFC1C50719B04BFBE36584E0A659B0 /* APAddressBook-umbrella.h */,
+				43D19CBD07B89A92131E981D342C501D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/APAddressBook";
+			sourceTree = "<group>";
+		};
+		A9F63C1DDC32BFB6C4AD64195DD4D44F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				AA552A4C13DEB15F0B7D8193C2C9254C /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		AA552A4C13DEB15F0B7D8193C2C9254C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F2EF84E02465FC06155E4AE4A7BD6DDC /* Firebase.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
-		A1FB9742D21C7BDC7BEDC23587908E00 /* Swift */ = {
+		B08DF5BB84E025D6241D4124AFF3E19E /* NSData+zlib */ = {
 			isa = PBXGroup;
 			children = (
-				C0844E2C08A74D297FB57350BE418A81 /* APAddressBook-Bridging.h */,
+				1A45F417BCC61B4966F8516C9EA0477F /* GTMNSData+zlib.h */,
+				BE0D8A0424FC335499C157785558D118 /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		B52798FFF4DF2DE8D59752CA8EFC68BE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7A4F211694429B15BF9517FF50A5ADC9 /* GTMSessionFetcher.h */,
+				DECF77117F2F16221F8A76FFDE15662A /* GTMSessionFetcher.m */,
+				53CA96D5B0155012304E149579C6E150 /* GTMSessionFetcherLogging.h */,
+				A5D859632E2CB0C7E42B94339D162B7E /* GTMSessionFetcherLogging.m */,
+				60B5B787B53BC8E40DD5BA649F9B386E /* GTMSessionFetcherService.h */,
+				171C0A2A2A6A270F7D7BEFC17FC65099 /* GTMSessionFetcherService.m */,
+				BB4C61B82BB6F01ABAEEA1DA1E988558 /* GTMSessionUploadFetcher.h */,
+				AC08C6A74087DAAC692EDDEC87DBBF40 /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B5A5AD9D0E00C6AEF794A667D0B7BDE9 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				A04ECEB47E145FE30E8334E427BD3117 /* DebugUtils */,
+				08BC7E20619301E2C99418073C2A030E /* Defines */,
+				B08DF5BB84E025D6241D4124AFF3E19E /* NSData+zlib */,
+				E42EA74E9179DB646DCD07B142398AB4 /* NSDictionary+URLArguments */,
+				93E6A9B5F2DB7E68D5BC88FF56AACAA1 /* NSString+URLArguments */,
+				0637B27FB47CBDC48E47A0CEAAC319CF /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		BCA696C209D47F69A57A77A1B5D818C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E659850B987BC665D3E63CE133EB1FB /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD01454CB1BB71D8CA6D7CD0FF028538 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF3B74DED222529C228ADF2084BD11 /* APAddress.h */,
+				C8A1E12B19B2EAE8074E50318AFC4F5E /* APAddress.m */,
+				AA67ED26A1518813649A45DC97157552 /* APAddressBook.h */,
+				C42CDB433224FB9D2A1EC41D6EA28A54 /* APAddressBook.m */,
+				2E298EFA633366CAD1C9040AD147E1CA /* APAddressBookAccessRoutine.h */,
+				24BC0B69DEA0E7BA2B140D21D7EEFD0F /* APAddressBookAccessRoutine.m */,
+				0EAE190FB27BFF3DFB3349C45C1C3AE0 /* APAddressBookBaseRoutine.h */,
+				4A8648CAB1A2078B2E65B5DBBA83F5BC /* APAddressBookBaseRoutine.m */,
+				A0B3653ED7DE794E86EC0E2FF2EDF111 /* APAddressBookContactsRoutine.h */,
+				7FD7858A22517ECDF3CFB3802661482F /* APAddressBookContactsRoutine.m */,
+				0D0AC484108D6FFA1BDD6C00FF16DC9D /* APAddressBookExternalChangeDelegate.h */,
+				2525DD8B97DF84B2F4BEEC305B7164B9 /* APAddressBookExternalChangeRoutine.h */,
+				43FFCD0DC59F17EA44343250CB4E0C4C /* APAddressBookExternalChangeRoutine.m */,
+				43F417FB48402F3F713C7C5805394938 /* APAddressBookRefWrapper.h */,
+				3533CE258A5E6C4425AA8F2EC0B17C7D /* APAddressBookRefWrapper.m */,
+				B99494D6DEC997115BFC46AA1B273538 /* APContact.h */,
+				7E8E2F44FD5325E51EAD49C26F25C3C4 /* APContact.m */,
+				EFB3BD89724E2F8C9E4BAA1C38EA6B60 /* APContactBuilder.h */,
+				8AD4D54B28A493234ADDBF94C8435E03 /* APContactBuilder.m */,
+				EEC2D66D58AE1D1C05BD6CE5B7292145 /* APContactDataExtractor.h */,
+				1D3C80F93C7373D262846B572B8487B6 /* APContactDataExtractor.m */,
+				49346300DED31F48D1A4B58179FA244A /* APContactDate.h */,
+				66F6DFC8D7ED6566BDA061144AFB5DE8 /* APContactDate.m */,
+				91D20B07160996291D790CD5C152459E /* APContactListBuilder.h */,
+				309BCA510C142A30CDD420978FC92EEA /* APContactListBuilder.m */,
+				D056BF2F4CEBB3ADF047A08D90D6EA48 /* APEmail.h */,
+				8B47C0F777FA375C92A09C8880CE98AD /* APEmail.m */,
+				887D4E639B66A728A5D2238E04043256 /* APImageExtractor.h */,
+				03CA76C9CDB79AB1D415F91B8768E2C1 /* APImageExtractor.m */,
+				B0E3692F3E2EE9A2ACF060D2322B9E24 /* APJob.h */,
+				92E0447B9CDED937AFCF935AE40B6752 /* APJob.m */,
+				6859062699FCF6D12DF51A4287AC0402 /* APName.h */,
+				D624333F5DB51CC08BD614C64BE9BE68 /* APName.m */,
+				35E9C36899876A05210C6739BE8884F0 /* APPhone.h */,
+				C192C65E17F6F4A3B3C327B6B674D6B3 /* APPhone.m */,
+				45DE23DD28446B61CDB71E484854C3DA /* APRecordDate.h */,
+				FCF970BFF3AA27026B0381AB6AE7344C /* APRecordDate.m */,
+				30AAADB1763ED5DA99EBE36E91F3F904 /* APRelatedPerson.h */,
+				A77BC9DCCBBCF87DEDD0D95F8F741F85 /* APRelatedPerson.m */,
+				2FB733C3CC114CDEC40DB013B7C65A5D /* APSocialProfile.h */,
+				64823C2E9F0D8618E49C4D6FEEE41041 /* APSocialProfile.m */,
+				E8617DCC31ACCD5F19973B53F5B2690C /* APSocialServiceHelper.h */,
+				521C5F35D4BCEB2306C97136BC3BC414 /* APSocialServiceHelper.m */,
+				183D8E663E2B6DD17ED59BAB08F76D34 /* APSource.h */,
+				1471D76881007BE3F1DA351B37A987F1 /* APSource.m */,
+				ED038E5213A0B0B19FAAC90C3B75AACA /* APThread.h */,
+				0BA3298C28B6C67F8320B5EE8529A73B /* APThread.m */,
+				D6E637C1E110A472E75C46BD9F1E0508 /* APTypes.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D09A82DE0688E955A246324B1235267E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5A9BA9D000E41357D8B2F54F17279E4 /* GTMSessionFetcher.modulemap */,
+				5D62F4F7E97E6ACF319B718E8F11E7AE /* GTMSessionFetcher.xcconfig */,
+				E6329EACCAEFF470306EC37C7746EC7A /* GTMSessionFetcher-dummy.m */,
+				13F41BB34B1EFBC3CC0EA7F36CE42A8A /* GTMSessionFetcher-prefix.pch */,
+				3EFDC5887CE407159437D0876654035C /* GTMSessionFetcher-umbrella.h */,
+				E8A94AE3235AE49138CBDDAFF74A98C4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
+		DCFA933C1111A041371E77DE9B8F6AB6 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				34B4272731E2DA796AC920BDAC79649C /* APAddressBook-Bridging.h */,
 			);
 			name = Swift;
 			sourceTree = "<group>";
 		};
-		E9ED0D9CC3741451E466D5B02DB5C7B6 /* Products */ = {
+		E42EA74E9179DB646DCD07B142398AB4 /* NSDictionary+URLArguments */ = {
 			isa = PBXGroup;
 			children = (
-				57C5A7869056B2C7EB2911B16EB1AAB7 /* Alamofire.framework */,
-				B35C78DED1D6289746311A2ACCBDE7B4 /* APAddressBook.framework */,
-				B0CC5247ADC26B810B2B120B4B647AF8 /* Pods_TwilioSms.framework */,
+				0DCBF36E69A89740AE7BFDBEF6CDA17E /* GTMNSDictionary+URLArguments.h */,
+				A7302578A36BBC01C9244904AD9E46E5 /* GTMNSDictionary+URLArguments.m */,
 			);
-			name = Products;
+			name = "NSDictionary+URLArguments";
 			sourceTree = "<group>";
 		};
-		ED17446C63B200A9CC543CC0A1861F95 /* iOS */ = {
+		E79A5B5034D23A4A2371018F1F0A1839 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C5F7CAE5C3E7B8BDDDBB36B95DF186FE /* AddressBook.framework */,
-				0AD0A1D445C5A894350982E575DC96B3 /* Foundation.framework */,
+				D7C023D4AAA4F28CC4B1DFB11A4DFEC5 /* AddressBook.framework */,
+				974A3E7657256079AAD79768B047F404 /* Foundation.framework */,
+				F32F7A9CC164F35C5BE2FF39BF1D14B5 /* Security.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F858EEDD4A720C06234A1D23E7BAFC43 /* Alamofire */ = {
+		F199AEEEB8E79898566D3BD5F4120EEB /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
-				B59832732247B2DD8F6DA549F997C07A /* AFError.swift */,
-				C2423BAE17F15434669463E662637F92 /* Alamofire.swift */,
-				2B42E9EBAE00CB3B01806A6D295A3609 /* DispatchQueue+Alamofire.swift */,
-				9A0BAC9842BD6A72AF4157150114E9C0 /* MultipartFormData.swift */,
-				44DCD449C6C146EBCB9511A75683BFD1 /* NetworkReachabilityManager.swift */,
-				39F1D25C2BAA5928DD37FE797C7DEC82 /* Notifications.swift */,
-				A68FA86DDCB6A60117302792982118D6 /* ParameterEncoding.swift */,
-				DFEEDDE7BDBFF861B66701C58138703F /* Request.swift */,
-				BF96524136CA3CDD8E94917555F2C9F4 /* Response.swift */,
-				8CDEB74A7717C1B006090E04A8BEA124 /* ResponseSerialization.swift */,
-				A25AFC823FAEE41D4ECE22643105DA5C /* Result.swift */,
-				49DCC7649821FAC6A63DE635A7B1CA47 /* ServerTrustPolicy.swift */,
-				C50395DC6E2110F69EC4EB67F5F64D8A /* SessionDelegate.swift */,
-				3C3CB4B34F797AB2030FB9FB0AEF3120 /* SessionManager.swift */,
-				0805608BC709C7FCEA4C1543341886AB /* TaskDelegate.swift */,
-				6A08B1CD40515A1372D1B6EB6E47523A /* Timeline.swift */,
-				C0D0A8B8219ECBD070BF9CB8B93680B5 /* Validation.swift */,
-				555337A8F03409FC4EA8C12584C8D31E /* Support Files */,
+				13242975EED92AD55576D33DD619871A /* Frameworks */,
 			);
-			name = Alamofire;
-			path = Alamofire;
+			name = FirebaseCore;
+			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,11 +826,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AE46AF4D067710B84438AAE541703CD /* Headers */ = {
+		82D993B88C10479096F17ADDEAB85D94 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0211ED7CF7FE57E57FAB6FB487C037CE /* Pods-TwilioSms-umbrella.h in Headers */,
+				D3F381B45ADFDDE51CA31F1E141236CA /* GTMSessionFetcher-umbrella.h in Headers */,
+				8852FD9AFC242520924D98BE9C4E2477 /* GTMSessionFetcher.h in Headers */,
+				1ED67707C258751E7888DAC2AB3D8501 /* GTMSessionFetcherLogging.h in Headers */,
+				DF9559C3822E3C6119BE43E4EDFD7EEE /* GTMSessionFetcherService.h in Headers */,
+				F09EDD53B94234F5F8DAC4DCD5CD969E /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32C54526B4A92797EB324F762743565 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60CBAF4F0B0B9179C70F05C373FF99DF /* Pods-TwilioSms-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,26 +854,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB0A1DF130E97C4755B09863D7F1AD5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0749EC40D3519957D43A1040F9662F71 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				B05C496A6F67CE9F60DC711F402AB20A /* GTMDebugSelectorValidation.h in Headers */,
+				4F2AB5BFF7D9DE66B8B242ACE69AE0D9 /* GTMDebugThreadValidation.h in Headers */,
+				D28734EDC84B2A7FBC4D5DCF95177BF8 /* GTMDefines.h in Headers */,
+				B9A04CBBF007CB8AAF75D61C5EF4D81F /* GTMMethodCheck.h in Headers */,
+				C34E24520624B382515A0F58185E6926 /* GTMNSData+zlib.h in Headers */,
+				11F0D0CB930604B4DAAE93FEA3904826 /* GTMNSDictionary+URLArguments.h in Headers */,
+				DA2F5A299DC9A8ECC5F73A66172E64BC /* GTMNSString+URLArguments.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		87C48337E44658D4160BF2601245896C /* Pods-TwilioSms */ = {
+		107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56A700A51DB6C398E2105CCF992735D4 /* Build configuration list for PBXNativeTarget "Pods-TwilioSms" */;
+			buildConfigurationList = 3166596B665E06C4B76C8ABB6AB06824 /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
 			buildPhases = (
-				786FAB41929244C46A7636F592F38EA2 /* Sources */,
-				56B82DFE4AD73359631E6F17BA94F1F9 /* Frameworks */,
-				9AE46AF4D067710B84438AAE541703CD /* Headers */,
+				222F0DC2D2D238CAB82346DE258E5472 /* Sources */,
+				9DB2FD04E98E8D08B812CFAD3603A106 /* Frameworks */,
+				BB0A1DF130E97C4755B09863D7F1AD5F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C1ECF94D6DCBEC80CAA71CD864AFDBD5 /* PBXTargetDependency */,
-				BDC9C7F42F72778222BF8C6276581D10 /* PBXTargetDependency */,
 			);
-			name = "Pods-TwilioSms";
-			productName = "Pods-TwilioSms";
-			productReference = B0CC5247ADC26B810B2B120B4B647AF8 /* Pods_TwilioSms.framework */;
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = B168D051DB31FBD81AE93C14CCA9069B /* GoogleToolboxForMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -518,7 +903,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 57C5A7869056B2C7EB2911B16EB1AAB7 /* Alamofire.framework */;
+			productReference = 37A023EB8639B6EC026BDEF275243428 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8B20CAEEA320DAD747BB08D1128BDD90 /* APAddressBook */ = {
@@ -535,7 +920,45 @@
 			);
 			name = APAddressBook;
 			productName = APAddressBook;
-			productReference = B35C78DED1D6289746311A2ACCBDE7B4 /* APAddressBook.framework */;
+			productReference = 80BA91BC8B3DE51DB7920AA6C8C5D3E9 /* APAddressBook.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C052BEBFBD0AB5218CC64BA3450F6547 /* GTMSessionFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7CC8559AB6F51830204F1A9CE54BF3E /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */;
+			buildPhases = (
+				C5A309EC5A80A27DBD420C5176E2122A /* Sources */,
+				6AE88E96161DE195EAAF0A3B6375EA50 /* Frameworks */,
+				82D993B88C10479096F17ADDEAB85D94 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMSessionFetcher;
+			productName = GTMSessionFetcher;
+			productReference = 3680D55155F6C4321657A35C22F82961 /* GTMSessionFetcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE615D018B23AD75A3FB7DE84DE7D80D /* Pods-TwilioSms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA12B2BD0C0014C2360A33597E30BC2D /* Build configuration list for PBXNativeTarget "Pods-TwilioSms" */;
+			buildPhases = (
+				C2A4A9F79DD08521C2FB94E541D7B73E /* Sources */,
+				A6EC506467791C30FE6F011786C48572 /* Frameworks */,
+				A32C54526B4A92797EB324F762743565 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F56D8F9171269450AE6977964A4E3D6F /* PBXTargetDependency */,
+				473DAEC86274D2C860986DE582E5AFA9 /* PBXTargetDependency */,
+				BDBAF2A98EBD3358E5B120F6B9195E6A /* PBXTargetDependency */,
+				8618525A4F96FD2A1107B8D2011AF6C6 /* PBXTargetDependency */,
+			);
+			name = "Pods-TwilioSms";
+			productName = "Pods-TwilioSms";
+			productReference = 7C49DDF1DF923D99F20037110210AF1D /* Pods_TwilioSms.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -555,18 +978,31 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E9ED0D9CC3741451E466D5B02DB5C7B6 /* Products */;
+			productRefGroup = 3D515974D094525F9FF66CE4BCC87793 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
 				8B20CAEEA320DAD747BB08D1128BDD90 /* APAddressBook */,
-				87C48337E44658D4160BF2601245896C /* Pods-TwilioSms */,
+				107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */,
+				C052BEBFBD0AB5218CC64BA3450F6547 /* GTMSessionFetcher */,
+				CE615D018B23AD75A3FB7DE84DE7D80D /* Pods-TwilioSms */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		222F0DC2D2D238CAB82346DE258E5472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CF9BB4493C89CB01FFADD6DB754927 /* GoogleToolboxForMac-dummy.m in Sources */,
+				2EFC826FB30ECD27C98CE7F3707E9012 /* GTMNSData+zlib.m in Sources */,
+				E7D23D2F163A34BEC60FD54BCCC22C76 /* GTMNSDictionary+URLArguments.m in Sources */,
+				5B92D1D5ECFEBA99F4C67864E1397A6D /* GTMNSString+URLArguments.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32B9974868188C4803318E36329C87FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -623,35 +1059,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		786FAB41929244C46A7636F592F38EA2 /* Sources */ = {
+		C2A4A9F79DD08521C2FB94E541D7B73E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF8510B80A034111D38D725B88339B44 /* Pods-TwilioSms-dummy.m in Sources */,
+				B229C88845ACD2F92DD8D6B88867635A /* Pods-TwilioSms-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A309EC5A80A27DBD420C5176E2122A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA6DFC4473A9B2DB6B8A42EA986BA5B /* GTMSessionFetcher-dummy.m in Sources */,
+				64F31B70A6E5E6963518A01C285B435F /* GTMSessionFetcher.m in Sources */,
+				07340F15BACBA601736DBB2ABF1ABC35 /* GTMSessionFetcherLogging.m in Sources */,
+				95C69447F517DB81437EDE0003486963 /* GTMSessionFetcherService.m in Sources */,
+				F4E294C07EE32FFCDCF7FF4D71D850BD /* GTMSessionUploadFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BDC9C7F42F72778222BF8C6276581D10 /* PBXTargetDependency */ = {
+		473DAEC86274D2C860986DE582E5AFA9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 630F8FF7F2E07D7D79E4D735211E42E6 /* PBXContainerItemProxy */;
+			targetProxy = 6EE73F633AABA48DC5DEDC95F3850061 /* PBXContainerItemProxy */;
 		};
-		C1ECF94D6DCBEC80CAA71CD864AFDBD5 /* PBXTargetDependency */ = {
+		8618525A4F96FD2A1107B8D2011AF6C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */;
+			targetProxy = A43093F0620BA7C95DD9E52776CFEA66 /* PBXContainerItemProxy */;
+		};
+		BDBAF2A98EBD3358E5B120F6B9195E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = C052BEBFBD0AB5218CC64BA3450F6547 /* GTMSessionFetcher */;
+			targetProxy = 56EDFE94F0FF9D615EE870C0D1045BEB /* PBXContainerItemProxy */;
+		};
+		F56D8F9171269450AE6977964A4E3D6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APAddressBook;
 			target = 8B20CAEEA320DAD747BB08D1128BDD90 /* APAddressBook */;
-			targetProxy = 7A2371F99A117E97A6C8A3BEC8F0D1A3 /* PBXContainerItemProxy */;
+			targetProxy = BFE77041D03EAD5963FFBB433713A3CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0B04BE2E329CCFC1BE7002FF13860669 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F908D185DF5A7A5D272BDC2666D74A15 /* APAddressBook.xcconfig */;
+			baseConfigurationReference = 79E358FF4AF57D1734C397253EC1BB2F /* APAddressBook.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -727,7 +1187,7 @@
 		};
 		23AEE71121E6D7C9D30BD78F02A63DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F908D185DF5A7A5D272BDC2666D74A15 /* APAddressBook.xcconfig */;
+			baseConfigurationReference = 79E358FF4AF57D1734C397253EC1BB2F /* APAddressBook.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -757,7 +1217,171 @@
 			};
 			name = Debug;
 		};
-		42C2531BF3B96104343BBB6F267E94AA /* Debug */ = {
+		3AF861AEADA89A377F12178D493BED95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3464C762BF819BCD93FD633C5ECF3C1C /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E5CE97D239CC26D3DB28CB3B8A67E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907894B3E4A57C45B19F2D1B58AA848D /* Pods-TwilioSms.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TwilioSms/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TwilioSms/Pods-TwilioSms.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TwilioSms;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		621A10F5C0A994B466277661C1B2C19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13B7D96A4C469B9028CFD3834A17AAA /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		881B19BB9961D509DACE94450066151E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3464C762BF819BCD93FD633C5ECF3C1C /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C48CCCB862EC56A4174F6E1715688C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13B7D96A4C469B9028CFD3834A17AAA /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9986920EF9DC6F45052AC1DCA33C2A19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F87A52551307C5D82F4FE67C2566BEC /* Pods-TwilioSms.debug.xcconfig */;
 			buildSettings = {
@@ -793,41 +1417,9 @@
 			};
 			name = Debug;
 		};
-		621A10F5C0A994B466277661C1B2C19F /* Release */ = {
+		B9C7324D0ADEABED7BC7B2D9C608C5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B70A6F1C563E148829F5DC095BD8A47B /* Alamofire.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8C48CCCB862EC56A4174F6E1715688C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B70A6F1C563E148829F5DC095BD8A47B /* Alamofire.xcconfig */;
+			baseConfigurationReference = 5D62F4F7E97E6ACF319B718E8F11E7AE /* GTMSessionFetcher.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -840,58 +1432,22 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
+				PRODUCT_NAME = GTMSessionFetcher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		B1CCC09CE50E649D590C2CCE42B30F03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 907894B3E4A57C45B19F2D1B58AA848D /* Pods-TwilioSms.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TwilioSms/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TwilioSms/Pods-TwilioSms.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TwilioSms;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -933,6 +1489,38 @@
 			};
 			name = Release;
 		};
+		ED969C86CBBA712335D5E741625E75B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D62F4F7E97E6ACF319B718E8F11E7AE /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -954,6 +1542,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3166596B665E06C4B76C8ABB6AB06824 /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF861AEADA89A377F12178D493BED95 /* Debug */,
+				881B19BB9961D509DACE94450066151E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -963,11 +1560,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56A700A51DB6C398E2105CCF992735D4 /* Build configuration list for PBXNativeTarget "Pods-TwilioSms" */ = {
+		AA12B2BD0C0014C2360A33597E30BC2D /* Build configuration list for PBXNativeTarget "Pods-TwilioSms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42C2531BF3B96104343BBB6F267E94AA /* Debug */,
-				B1CCC09CE50E649D590C2CCE42B30F03 /* Release */,
+				9986920EF9DC6F45052AC1DCA33C2A19 /* Debug */,
+				4E5CE97D239CC26D3DB28CB3B8A67E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7CC8559AB6F51830204F1A9CE54BF3E /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C7324D0ADEABED7BC7B2D9C608C5E0 /* Debug */,
+				ED969C86CBBA712335D5E741625E75B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

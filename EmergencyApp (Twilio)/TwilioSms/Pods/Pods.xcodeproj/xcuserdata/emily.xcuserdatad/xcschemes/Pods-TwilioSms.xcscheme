@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "87C48337E44658D4160BF2601245896C"
+               BlueprintIdentifier = "CE615D018B23AD75A3FB7DE84DE7D80D"
                BuildableName = "Pods_TwilioSms.framework"
                BlueprintName = "Pods-TwilioSms"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "87C48337E44658D4160BF2601245896C"
+            BlueprintIdentifier = "CE615D018B23AD75A3FB7DE84DE7D80D"
             BuildableName = "Pods_TwilioSms.framework"
             BlueprintName = "Pods-TwilioSms"
             ReferencedContainer = "container:Pods.xcodeproj">

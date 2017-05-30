@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TwilioSms.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +32,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>87C48337E44658D4160BF2601245896C</key>
+		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -33,6 +43,16 @@
 			<true/>
 		</dict>
 		<key>8B20CAEEA320DAD747BB08D1128BDD90</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE615D018B23AD75A3FB7DE84DE7D80D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
