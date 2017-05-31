@@ -8,13 +8,36 @@
 
 import Foundation
 import UIKit
+import Alamofire
+import Firebase
 
 class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     let cellReuseIdentifier = "cell"
+    var ref = FIRDatabase.database().reference()
     
     @IBAction func emergencyPress(_ sender: Any) {
         print("TODO: Send Message After Delay")
+        
+//        let headers = [
+//            "Content-Type": "application/x-www-form-urlencoded"
+//        ]
+//        
+//        let parameters: Parameters = [
+//            "To": String(contact), //loop this through emergencyContacts
+//            //            "From": yourNumber,
+//            "Body": messageField.text ?? ""
+//        ]
+        
+        //"http://41e888fa.ngrok.io/login?userid=\(userID)"
+        
+        var userID = FIRAuth.auth()!.currentUser!.uid
+        
+        Alamofire.request("http://6cfad110.ngrok.io/test?userid=\(userID)").response { response in
+            print(response)
+            
+        }
+        
     }
     
     @IBAction func delayInfo(_ sender: Any) {
