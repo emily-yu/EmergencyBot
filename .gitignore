@@ -1,4 +1,4 @@
 flask
 .DS_Store
 secret.py
-_pycache_
+_pycache_/
