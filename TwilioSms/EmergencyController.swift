@@ -33,9 +33,8 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         var userID = FIRAuth.auth()!.currentUser!.uid
         
-        Alamofire.request("http://6cfad110.ngrok.io/test?userid=\(userID)").response { response in
+        Alamofire.request("http://5d380361.ngrok.io/test?userid=\(userID)").response { response in
             print(response)
-            
         }
         
     }

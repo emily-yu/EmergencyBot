@@ -1,8 +1,9 @@
 from flask import Flask, request
 from twilio.rest import Client
 import urllib.request
-from bottle import route, run, template, static_file, get, post, request
-
+# from bottle import route, run, template, static_file, get, post, request
+import requests
+from secret import getSID, getAuth
 
 app = Flask(__name__)
  
@@ -29,11 +30,19 @@ def send_sms():
 @app.route('/test')
 def test():
 	print("hey")
-	userid = request.GET.get('userid')
-	print(userid)
-	image = urllib.request.urlopen('https://emergencyapp-15097.firebaseio.com/' + '8RCeBan4iPZmirWaH2RRaU2XjhM2' + '/name.json').read()
-	print('OUTPUT' + image)
+	userid = request.args.get("userid")
+    # http://5d380361.ngrok.io/test?userid=8RCeBan4iPZmirWaH2RRaU2XjhM2
+	image = urllib.request.urlopen('https://emergencyapp-15097.firebaseio.com/' + userid + '/name.json').read()
+
 	return image
+
+@app.route('/verify')
+def verify():
+    print("verify twilio number")
+    sid = getSID()
+    authtoken = getAuth()
+    # https://api.authy.com/protected/{json,xml}/phones/verification/start
+    return sid + " " + authtoken
 
 if __name__ == '__main__':
         app.run()

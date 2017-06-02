@@ -41,7 +41,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         Alamofire.request("http://emergency-app-twilio.herokuapp.com/sms", method: .post, parameters: parameters, headers: headers).response { response in
             print(response)
-            
         }
     }
     
