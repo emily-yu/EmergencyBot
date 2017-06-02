@@ -7,8 +7,8 @@ from bottle import route, run, template, static_file, get, post, request
 app = Flask(__name__)
  
 # put your own credentials here
-ACCOUNT_SID = 'ACce55d5efd911222f6eba43f84ee79acd' #ACCOUNT_SID = 'SID'
-AUTH_TOKEN = '300a352d939cb8a6ae3a0163b3d9f55d' #AUTH_TOKEN = 'TOKEN'
+ACCOUNT_SID = 'SID'
+AUTH_TOKEN = 'TOKEN'
 
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
