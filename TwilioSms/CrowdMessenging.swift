@@ -13,7 +13,7 @@ import Alamofire
 var emergencyContacts: [Int] = [6505754922, 6505754922]
 
 // not being used
-var yourNumber = 6505754922 // find way to verify the number for twilio
+var yourNumber = 6505754922
 var isVerified = false // tracks whether your number is verified
 var verifiedNumbers: [Int] = [16504223512] // list of verified numbers
 
@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let parameters: Parameters = [
             "To": String(contact), //loop this through emergencyContacts
-//            "From": yourNumber,
+            "From": yourNumber, // not sure if like same works right now
             "Body": messageField.text ?? ""
         ]
         
