@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             "Body": messageField.text ?? ""
         ]
         
-        Alamofire.request("http://emergency-app-twilio.herokuapp.com/sms", method: .post, parameters: parameters, headers: headers).response { response in
+        Alamofire.request("\(ngrok)/sms", method: .post, parameters: parameters, headers: headers).response { response in
             print(response)
         }
     }

@@ -19,28 +19,19 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
     @IBAction func emergencyPress(_ sender: Any) {
         print("TODO: Send Message After Delay")
         
-//        let headers = [
-//            "Content-Type": "application/x-www-form-urlencoded"
-//        ]
-//        
-//        let parameters: Parameters = [
-//            "To": String(contact), //loop this through emergencyContacts
-//            //            "From": yourNumber,
-//            "Body": messageField.text ?? ""
-//        ]
-        
-        //"http://41e888fa.ngrok.io/login?userid=\(userID)"
-        
         var userID = FIRAuth.auth()!.currentUser!.uid
         
-        Alamofire.request("http://5d380361.ngrok.io/test?userid=\(userID)").response { response in
+        Alamofire.request("\(ngrok)/test?userid=\(userID)").response { response in
             print(response)
         }
         
     }
     
     @IBAction func delayInfo(_ sender: Any) {
-        print("TODO: retrieve delays from all contacts being used and average their delay times")
+        let alertController = UIAlertController(title: "Delay Time", message: "From the contacts set as emergency contacts, the delay times inputted as individual times are averaged out and an overall delay time is calculated.", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(defaultAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     @IBOutlet var tableView: UITableView!

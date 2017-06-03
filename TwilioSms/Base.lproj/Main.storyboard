@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="301" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zgi-v7-rpJ" id="24P-H9-zF4">
-                                            <rect key="frame" x="0.0" y="0.0" width="301" height="109"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="301" height="109.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-l9-eie">
@@ -277,7 +277,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g6D-P6-4nc" id="51z-Cu-t9y">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -285,7 +285,7 @@
                                         <rect key="frame" x="0.0" y="72" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5wq-Dc-PIv" id="NCE-Q4-lKt">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(123)123-1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6H-dA-VOf">
@@ -348,10 +348,10 @@
             </objects>
             <point key="canvasLocation" x="-1032.8" y="1057.4212893553224"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="cA1-0i-5a6">
             <objects>
-                <viewController id="QYp-Rj-H6b" sceneMemberID="viewController">
+                <viewController id="QYp-Rj-H6b" customClass="PreferenceController" customModule="TwilioSms" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VQg-6c-hnA"/>
                         <viewControllerLayoutGuide type="bottom" id="DxA-1o-Pdl"/>
@@ -364,7 +364,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Preferences" id="veQ-id-ytv"/>
+                                    <navigationItem title="Settings" id="veQ-id-ytv"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-yI-cwW">
@@ -381,8 +381,11 @@
                                 <state key="normal" title="?">
                                     <color key="titleColor" red="0.42361101509999999" green="0.42360252139999999" blue="0.4236082733" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="info:" destination="QYp-Rj-H6b" eventType="touchUpInside" id="GaD-pQ-gvB"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XeD-E7-Cvx">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XeD-E7-Cvx">
                                 <rect key="frame" x="119" y="150" width="205" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -396,7 +399,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="countrycode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O46-bh-CbL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O46-bh-CbL">
                                 <rect key="frame" x="70" y="150" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -410,6 +413,9 @@
                                 <state key="normal" title="SEND VERIFICATION CODE">
                                     <color key="titleColor" red="0.43537414070000002" green="0.43536540870000001" blue="0.43537136910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendVerification:" destination="QYp-Rj-H6b" eventType="touchUpInside" id="MmH-kG-J6R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llb-Hr-1X5">
                                 <rect key="frame" x="51" y="284" width="273" height="30"/>
@@ -418,6 +424,9 @@
                                 <state key="normal" title="VERIFY">
                                     <color key="titleColor" red="0.43537414070000002" green="0.43536540870000001" blue="0.43537136910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="verifyCode:" destination="QYp-Rj-H6b" eventType="touchUpInside" id="xWX-4X-ppB"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verification Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCW-UA-zXo">
                                 <rect key="frame" x="51" y="246" width="273" height="30"/>
@@ -436,10 +445,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settingIcon" selectedImage="settingIcon" id="6Sa-vi-DdC"/>
+                    <connections>
+                        <outlet property="countryCode" destination="O46-bh-CbL" id="oe0-sI-LIl"/>
+                        <outlet property="phoneNumber" destination="XeD-E7-Cvx" id="M2c-Ye-h30"/>
+                        <outlet property="verification" destination="qCW-UA-zXo" id="4f7-NB-ZGd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1KP-uD-l0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1050.4000000000001" y="1759.9700149925038"/>
+            <point key="canvasLocation" x="-1033" y="1780"/>
         </scene>
         <!--Add Emergency Controller-->
         <scene sceneID="n8P-pu-xWS">
@@ -475,7 +490,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lq2-Fl-Ozr" id="ALb-N4-qVc">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsK-W9-bew">
@@ -753,7 +768,7 @@
                                 <rect key="frame" x="232" y="227" width="52" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" red="0.99757611749999997" green="0.68652284149999998" blue="0.68630880120000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.99757611749999997" green="0.48554773913952376" blue="0.44409832351825823" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dP-dN-1vQ">
@@ -774,7 +789,7 @@
                                 <rect key="frame" x="79" y="255" width="216" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.99757611749999997" green="0.68652284149999998" blue="0.68630880120000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.14901961389999999" green="0.14901961389999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRd-dK-dTZ">
@@ -824,6 +839,7 @@
                         <segue destination="NEI-HX-fQR" kind="relationship" relationship="viewControllers" id="iSU-Z3-FvJ"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="XvL-Ff-dJ7"/>
                         <segue destination="vaZ-8V-3Ef" kind="relationship" relationship="viewControllers" id="LLw-UQ-cmI"/>
+                        <segue destination="QYp-Rj-H6b" kind="relationship" relationship="viewControllers" id="YwH-VW-371"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jhp-eP-DDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -858,7 +874,7 @@
                                         <rect key="frame" x="0.0" y="28" width="257" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DQm-n2-M6T" id="FVh-pz-Ocz">
-                                            <rect key="frame" x="0.0" y="0.0" width="257" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="257" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZA-g6-i2F">
@@ -933,9 +949,10 @@
     </scenes>
     <resources>
         <image name="groupIcon" width="30" height="30"/>
+        <image name="settingIcon" width="29" height="29"/>
         <image name="urgentIcon" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iVw-ME-aeF"/>
+        <segue reference="qfr-IP-ohX"/>
     </inferredMetricsTieBreakers>
 </document>
