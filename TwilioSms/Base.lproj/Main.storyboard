@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,37 +22,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-hr-dfw">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-hr-dfw">
                                 <rect key="frame" x="37" y="95" width="301" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollectionViewCell" rowHeight="110" id="Zgi-v7-rpJ" customClass="CollectionViewCell" customModule="TwilioSms" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="301" height="110"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollectionViewCell" rowHeight="77" id="Zgi-v7-rpJ" customClass="CollectionViewCell" customModule="TwilioSms" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="301" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zgi-v7-rpJ" id="24P-H9-zF4">
-                                            <rect key="frame" x="0.0" y="0.0" width="301" height="109.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="301" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-l9-eie">
-                                                    <rect key="frame" x="22" y="37" width="254" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-l9-eie">
+                                                    <rect key="frame" x="14" y="21" width="268" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="268" id="64n-2A-x7l"/>
+                                                        <constraint firstAttribute="height" constant="15" id="nWL-bz-diy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS1-4f-rfo">
-                                                    <rect key="frame" x="22" y="14" width="254" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS1-4f-rfo">
+                                                    <rect key="frame" x="14" y="6" width="268" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYf-lx-7R1">
+                                                    <rect key="frame" x="14" y="37" width="268" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="8SL-DN-tQ0"/>
+                                                        <constraint firstAttribute="width" constant="268" id="mkr-Rq-IQd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ee-hJ-ppX">
+                                                    <rect key="frame" x="14" y="53" width="268" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="WYE-Pu-7Jq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NYf-lx-7R1" firstAttribute="top" secondItem="ShM-l9-eie" secondAttribute="bottom" constant="1" id="2cx-eQ-ll5"/>
+                                                <constraint firstItem="3ee-hJ-ppX" firstAttribute="top" secondItem="NYf-lx-7R1" secondAttribute="bottom" constant="1" id="46Z-rL-Lw2"/>
+                                                <constraint firstItem="NYf-lx-7R1" firstAttribute="trailing" secondItem="3ee-hJ-ppX" secondAttribute="trailing" id="4B2-bH-2mV"/>
+                                                <constraint firstItem="VS1-4f-rfo" firstAttribute="top" secondItem="24P-H9-zF4" secondAttribute="topMargin" constant="-2" id="8qZ-tu-rla"/>
+                                                <constraint firstItem="VS1-4f-rfo" firstAttribute="leading" secondItem="ShM-l9-eie" secondAttribute="leading" id="Ch0-ak-ADF"/>
+                                                <constraint firstItem="ShM-l9-eie" firstAttribute="top" secondItem="VS1-4f-rfo" secondAttribute="bottom" id="EEM-ED-OtV"/>
+                                                <constraint firstItem="3ee-hJ-ppX" firstAttribute="bottom" secondItem="24P-H9-zF4" secondAttribute="bottomMargin" id="I19-1s-LTc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VS1-4f-rfo" secondAttribute="trailing" constant="11" id="TAG-Bt-cD4"/>
+                                                <constraint firstItem="VS1-4f-rfo" firstAttribute="leading" secondItem="24P-H9-zF4" secondAttribute="leadingMargin" constant="6" id="VrT-wJ-TEn"/>
+                                                <constraint firstItem="NYf-lx-7R1" firstAttribute="leading" secondItem="3ee-hJ-ppX" secondAttribute="leading" id="Xhv-RG-E71"/>
+                                                <constraint firstItem="ShM-l9-eie" firstAttribute="leading" secondItem="NYf-lx-7R1" secondAttribute="leading" id="tlf-Xc-Xxa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="additionalNotes" destination="3ee-hJ-ppX" id="SEK-AE-AiH"/>
                                             <outlet property="cellHeader" destination="VS1-4f-rfo" id="G6h-iY-YsJ"/>
                                             <outlet property="cellSubtitle" destination="ShM-l9-eie" id="xI6-xf-uyo"/>
+                                            <outlet property="delayTime" destination="NYf-lx-7R1" id="3Qx-uL-GN7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -93,7 +130,7 @@
         <!--Customize Contact Controller-->
         <scene sceneID="SYR-C2-fHT">
             <objects>
-                <viewController id="SS3-Nu-IoR" customClass="CustomizeContactController" customModule="TwilioSms" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customizeContact" id="SS3-Nu-IoR" customClass="CustomizeContactController" customModule="TwilioSms" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3vm-wv-KBw"/>
                         <viewControllerLayoutGuide type="bottom" id="dEK-IX-fVk"/>
@@ -197,6 +234,7 @@
                                     <color key="titleColor" red="0.47850576039999998" green="0.47849634289999998" blue="0.47850272059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="SS3-Nu-IoR" eventType="touchUpInside" id="XJX-45-BJ1"/>
                                     <action selector="submitButton:" destination="M27-Rv-RKD" eventType="touchUpInside" id="Pu4-gK-UON"/>
                                 </connections>
                             </button>
@@ -273,19 +311,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="g6D-P6-4nc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmergencyControllerCell" id="5wq-Dc-PIv" customClass="EmergencyControllerCell" customModule="TwilioSms" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g6D-P6-4nc" id="51z-Cu-t9y">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmergencyControllerCell" id="5wq-Dc-PIv" customClass="EmergencyControllerCell" customModule="TwilioSms" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5wq-Dc-PIv" id="NCE-Q4-lKt">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(123)123-1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6H-dA-VOf">
@@ -297,6 +327,13 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZa-MN-56v">
                                                     <rect key="frame" x="15" y="4" width="217" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Seb-qb-VFL">
+                                                    <rect key="frame" x="15" y="42" width="0.0" height="0.0"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -721,7 +758,6 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="e1s-WA-Ofb" eventType="touchUpInside" id="GCJ-Sd-15e"/>
-                                    <segue destination="I6v-YM-g7y" kind="show" id="Rla-L2-IYw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mf-Nu-P2g">
@@ -802,7 +838,6 @@
                                 </state>
                                 <connections>
                                     <action selector="signup:" destination="Uap-OH-tUi" eventType="touchUpInside" id="xPc-Sa-Qrz"/>
-                                    <segue destination="I6v-YM-g7y" kind="show" id="qfr-IP-ohX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsV-MV-VaO">
@@ -954,6 +989,6 @@
         <image name="urgentIcon" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rla-L2-IYw"/>
+        <segue reference="FDk-vc-C33"/>
     </inferredMetricsTieBreakers>
 </document>

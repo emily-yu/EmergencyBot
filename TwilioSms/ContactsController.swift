@@ -20,7 +20,6 @@ class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataS
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
     
     // number of rows in table view
@@ -34,7 +33,8 @@ class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataS
 
         cell.cellHeader.text = contactNames[indexPath.row]
         cell.cellSubtitle.text = String(contactNumbers[indexPath.row])
-        tableView.rowHeight = 80
+        cell.delayTime.text = "Delay Time: \(String(contactDelay[indexPath.row]))"
+        cell.additionalNotes.text = contactAdditionalInfo[indexPath.row]
         
         return cell
     }
@@ -45,41 +45,24 @@ class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataS
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    // this method handles row deletion
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if editingStyle == .delete {
-            
-            // remove the item from the data model
-            contactNames.remove(at: indexPath.row)
-            
-            // delete the table view row
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            
-        } else if editingStyle == .insert {
-            // Not used in our example, but if you were adding a new row, this is where you would do it.
-        }
-    }
-    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
-        // action one
+        clickedIndex = indexPath.row
         let editAction = UITableViewRowAction(style: .default, title: "Edit", handler: { (action, indexPath) in
-            print("Edit tapped")
+            // populate placeholders in customizeContact with the current values
+            let ivc = self.storyboard?.instantiateViewController(withIdentifier: "customizeContact")
+            ivc?.modalPresentationStyle = .custom
+            ivc?.modalTransitionStyle = .crossDissolve
+            self.present(ivc!, animated: true, completion: { _ in })
         })
-        editAction.backgroundColor = UIColor.blue
-        
-        // action two
-        let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: { (action, indexPath) in
-            print("Delete tapped")
-        })
-        deleteAction.backgroundColor = UIColor.red
-        
-        return [editAction, deleteAction]
+        editAction.backgroundColor = UIColor(red:0.59, green:0.73, blue:0.95, alpha:1.0)
+        return [editAction]
     }
 }
 
 class CollectionViewCell: UITableViewCell {
     @IBOutlet var cellHeader: UILabel!
     @IBOutlet var cellSubtitle: UILabel!
+    @IBOutlet var delayTime: UILabel!
+    @IBOutlet var additionalNotes: UILabel!
 }

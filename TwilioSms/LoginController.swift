@@ -35,21 +35,35 @@ class LoginController: UIViewController {
                     
                     print("You have successfully logged in")
                     
-                    // import contacts (name, number)
+                    // import contacts (name, number, delay, additional notes)
                     self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").observe(.value, with: {      snapshot in
-                        var count = Int(snapshot.childrenCount-1)
+                        let count = Int(snapshot.childrenCount-1)
                         if (count > 0) { // has elements to import
                             for i in 1...snapshot.childrenCount-1 { // iterate from post 1
-                                self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(i)).child("name").observe(.value, with: {      snapshot in
+                                
+                                let importPath = self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts")
+                                importPath.child(String(i)).child("name").observe(.value, with: {      snapshot in
                                     contactNames.append(snapshot.value as! String)
                                     if (contactNames.count == count) { // array is not missing data
-                                        print(contactNames)
+                                        print("CONTACT NAMES: \(contactNames)")
                                     }
                                 })
-                                self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(i)).child("number").observe(.value, with: {      snapshot in
+                                importPath.child(String(i)).child("number").observe(.value, with: {      snapshot in
                                     contactNumbers.append(snapshot.value as! Int)
                                     if (contactNumbers.count == count) { // array is not missing data
-                                        print(contactNumbers)
+                                        print("CONTACT NUMBERS: \(contactNumbers)")
+                                    }
+                                })
+                                importPath.child(String(i)).child("delay").observe(.value, with: {      snapshot in
+                                    contactDelay.append(snapshot.value as! Float)
+                                    if (contactDelay.count == count) { // array is not missing data
+                                        print("CONTACT DELAY: \(contactDelay)")
+                                    }
+                                })
+                                importPath.child(String(i)).child("notes").observe(.value, with: {      snapshot in
+                                    contactAdditionalInfo.append(snapshot.value as! String)
+                                    if (contactAdditionalInfo.count == count) { // array is not missing data
+                                        print("CONTACT NOTES: \(contactAdditionalInfo)")
                                     }
                                 })
                             }
@@ -68,7 +82,7 @@ class LoginController: UIViewController {
                              for each element in emergencyContacts
                                 find element in contacts by phone number and retrive key
                                     find where in contacts-number array it is
-                                    use that index to get the details (name, number) from the contacts firebase
+                                    use that index to get the details (name, number, delay) from the contacts firebase
                             */
                             
                             for i in 1...snapshot.childrenCount-1 { // iterate from post 1
@@ -76,7 +90,6 @@ class LoginController: UIViewController {
                                     
                                     // search
                                     let textToFind = snapshot.value! as? Int
-                                    print(textToFind)
                                     self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").queryOrdered(byChild: "number").queryEqual(toValue:textToFind).observe(.value, with: { snapshot in
                                         if (snapshot.value is NSNull) {
                                             print("Skillet was not found")
@@ -84,16 +97,34 @@ class LoginController: UIViewController {
                                         else {
                                             for child in snapshot.children {   //in case there are several skillets
                                                 let key = (child as AnyObject).key as String
-                                                self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(key)).child("name").observe(.value, with: {      snapshot in
+                                                
+                                                emergencyIndexes.append(key)
+                                                
+                                                let importPath = self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts")
+                                                importPath.child(String(key)).child("name").observe(.value, with: {      snapshot in
                                                     emergencyNames.append((snapshot.value! as? String)!)
                                                     if (emergencyNames.count == count) { // array is not missing data
-                                                        print(emergencyNames)
+                                                        print("EMERGENCY NAMES: \(emergencyNames)")
                                                     }
                                                 })
-                                                self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(key)).child("number").observe(.value, with: {      snapshot in
+                                                importPath.child(String(key)).child("number").observe(.value, with: {      snapshot in
                                                     emergencyNumbers.append((snapshot.value! as? Int)!)
-                                                    if (emergencyNumbers.count == count) { // array is not missing data
-                                                        print(emergencyNumbers)
+                                                    if (emergencyNumbers.count == count) { // done importing
+                                                        print("EMERGENCY NUMBERS: \(emergencyNumbers)")
+                                                        let ivc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
+                                                        ivc?.modalPresentationStyle = .custom
+                                                        ivc?.modalTransitionStyle = .crossDissolve
+                                                        self.present(ivc!, animated: true, completion: { _ in })
+                                                    }
+                                                })
+                                                importPath.child(String(key)).child("delay").observe(.value, with: {      snapshot in
+                                                    emergencyDelay.append((snapshot.value! as? Float)!)
+                                                    if (emergencyDelay.count == count) { // done importing
+                                                        print("EMERGENCY DELAY: \(emergencyDelay)")
+                                                        let ivc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
+                                                        ivc?.modalPresentationStyle = .custom
+                                                        ivc?.modalTransitionStyle = .crossDissolve
+                                                        self.present(ivc!, animated: true, completion: { _ in })
                                                     }
                                                 })
                                             }
@@ -107,10 +138,6 @@ class LoginController: UIViewController {
                         else { // no elements to import
                         }
                     })
-                    
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
-                    self.present(vc!, animated: true, completion: nil)
-                    
                 }
                 else {
                     

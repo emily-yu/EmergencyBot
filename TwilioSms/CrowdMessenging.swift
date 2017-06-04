@@ -57,7 +57,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.cellHeader.text = contactNames[indexPath.row]
         cell.cellSubtitle.text = String(contactNumbers[indexPath.row])
-        tableView.rowHeight = 60
         
         return cell
     }
