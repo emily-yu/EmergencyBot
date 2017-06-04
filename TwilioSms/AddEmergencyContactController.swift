@@ -25,15 +25,15 @@ class AddEmergencyController: UIViewController,UITableViewDelegate,UITableViewDa
     
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animals.count
+        return contactNames.count
     }
     
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell:AddEmergencyControllerCell = self.tableView.dequeueReusableCell(withIdentifier: "AddEmergencyControllerCell") as! AddEmergencyControllerCell
         
-        cell.cellHeader.text = animals[indexPath.row]
-        cell.cellSubtitle.text = String(troll[indexPath.row])
+        cell.cellHeader.text = contactNames[indexPath.row]
+        cell.cellSubtitle.text = String(contactNumbers[indexPath.row])
         //        tableView.rowHeight = 80
         
         return cell
@@ -51,7 +51,7 @@ class AddEmergencyController: UIViewController,UITableViewDelegate,UITableViewDa
         if editingStyle == .delete {
             
             // remove the item from the data model
-            animals.remove(at: indexPath.row)
+            contactNames.remove(at: indexPath.row)
             
             // delete the table view row
             tableView.deleteRows(at: [indexPath], with: .fade)

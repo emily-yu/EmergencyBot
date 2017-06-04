@@ -48,15 +48,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animals.count
+        return contactNames.count
     }
     
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell:CrowdMessengingCell = self.tableView.dequeueReusableCell(withIdentifier: "CrowdMessengingCell") as! CrowdMessengingCell
         
-        cell.cellHeader.text = animals[indexPath.row]
-        cell.cellSubtitle.text = String(troll[indexPath.row])
+        cell.cellHeader.text = contactNames[indexPath.row]
+        cell.cellSubtitle.text = String(contactNumbers[indexPath.row])
         tableView.rowHeight = 60
         
         return cell
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if editingStyle == .delete {
             
             // remove the item from the data model
-            animals.remove(at: indexPath.row)
+            contactNames.remove(at: indexPath.row)
             
             // delete the table view row
             tableView.deleteRows(at: [indexPath], with: .fade)

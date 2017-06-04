@@ -82,7 +82,7 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
         if editingStyle == .delete {
             
             // remove the item from the data model
-            animals.remove(at: indexPath.row)
+            contactNames.remove(at: indexPath.row)
             
             // delete the table view row
             tableView.deleteRows(at: [indexPath], with: .fade)

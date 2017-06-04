@@ -24,10 +24,12 @@ class NewContactController: UIViewController {
     @IBAction func submitButton(_ sender: Any) {
         if (phoneNumber.text != "" ){
             // append textfields to array
-            animals.append(name.text!)
-            troll.append(Int(phoneNumber.text!)!)
+            contactNames.append(name.text!)
+            contactNumbers.append(Int(phoneNumber.text!)!)
             
             // save new array
+            
+            // add to firebase
             
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
             self.present(vc!, animated: true, completion: nil)

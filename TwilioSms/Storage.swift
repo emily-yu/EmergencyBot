@@ -15,11 +15,9 @@ var emergencyNumbers: [Int] = []
 var emergencyNames: [String] = []
 
 // Contacts
-//var animals: [String] = ["Name1", "Name2", "Name3", "Name4", "Name5", "Name6"]
-//var troll: [Int] = [6505754922, 6505754922, 6505754922, 6505754922, 6505754922, 6505754922, 6505754922]
-var animals: [String] = [] // names
-var troll: [Int] = [] // numbers
-var additionalInfo: [String] = [] // additional notes
+var contactNames: [String] = []
+var contactNumbers: [Int] = []
+var additionalInfo: [String] = []
 
 // not being used
 var yourNumber = 6505754922

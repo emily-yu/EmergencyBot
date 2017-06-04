@@ -41,15 +41,15 @@ class LoginController: UIViewController {
                         if (count > 0) { // has elements to import
                             for i in 1...snapshot.childrenCount-1 { // iterate from post 1
                                 self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(i)).child("name").observe(.value, with: {      snapshot in
-                                    animals.append(snapshot.value as! String)
-                                    if (animals.count == count) { // array is not missing data
-                                        print(animals)
+                                    contactNames.append(snapshot.value as! String)
+                                    if (contactNames.count == count) { // array is not missing data
+                                        print(contactNames)
                                     }
                                 })
                                 self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(i)).child("number").observe(.value, with: {      snapshot in
-                                    troll.append(snapshot.value as! Int)
-                                    if (troll.count == count) { // array is not missing data
-                                        print(troll)
+                                    contactNumbers.append(snapshot.value as! Int)
+                                    if (contactNumbers.count == count) { // array is not missing data
+                                        print(contactNumbers)
                                     }
                                 })
                             }
