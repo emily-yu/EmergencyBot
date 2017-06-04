@@ -33,7 +33,13 @@ class SignUpController: UIViewController {
                 if error == nil {
                     // set user details
                     self.ref.child((user?.uid)!).setValue([
-                        "name": "ym"
+                        "name": "ym",
+                        "contacts": [
+                            "0": "default"
+                        ],
+                        "emergencyContact": [
+                            "0": "default"
+                        ]
                     ])
                     
                     //login w/ new account

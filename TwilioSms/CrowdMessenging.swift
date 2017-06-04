@@ -5,17 +5,8 @@
 //  Created by Emily on 2/8/17.
 //  Copyright © 2017 Emily. All rights reserved.
 
-//sending for multiple works - make custom messages?
-
 import UIKit
 import Alamofire
-
-var emergencyContacts: [Int] = [6505754922, 6505754922]
-
-// not being used
-var yourNumber = 6505754922
-var isVerified = false // tracks whether your number is verified
-var verifiedNumbers: [Int] = [16504223512] // list of verified numbers
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -23,9 +14,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet var messageField: UITextView!
     @IBOutlet var tableView: UITableView! // filler values
     @IBAction func sendData(sender: AnyObject) {
-        for i in emergencyContacts {
-            sendMessage(contact: i);
-        }
+//        for i in emergencyContacts {
+//            sendMessage(contact: i);
+//        }
     }
     
     func sendMessage(contact:Int){

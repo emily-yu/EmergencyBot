@@ -17,6 +17,7 @@ class LoginController: UIViewController {
     @IBOutlet var password: UITextField!
     
     @IBAction func login(_ sender: Any) {
+        ref = FIRDatabase.database().reference()
         if self.email.text == "" || self.password.text == "" {
 
             let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
@@ -33,7 +34,80 @@ class LoginController: UIViewController {
                 if error == nil {
                     
                     print("You have successfully logged in")
-                
+                    
+                    // import contacts (name, number)
+                    self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").observe(.value, with: {      snapshot in
+                        var count = Int(snapshot.childrenCount-1)
+                        if (count > 0) { // has elements to import
+                            for i in 1...snapshot.childrenCount-1 { // iterate from post 1
+                                self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(i)).child("name").observe(.value, with: {      snapshot in
+                                    animals.append(snapshot.value as! String)
+                                    if (animals.count == count) { // array is not missing data
+                                        print(animals)
+                                    }
+                                })
+                                self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(i)).child("number").observe(.value, with: {      snapshot in
+                                    troll.append(snapshot.value as! Int)
+                                    if (troll.count == count) { // array is not missing data
+                                        print(troll)
+                                    }
+                                })
+                            }
+                        }
+                        else { // no elements to import
+                        }
+                    })
+                    
+                    // import emergency contacts (name, numbers)
+                    let refPath = self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("emergencyContact")
+                    refPath.observe(.value, with: {      snapshot in
+                        let count = Int(snapshot.childrenCount-1)
+                        if (count > 0) { // has elements to import
+                            
+                            /*
+                             for each element in emergencyContacts
+                                find element in contacts by phone number and retrive key
+                                    find where in contacts-number array it is
+                                    use that index to get the details (name, number) from the contacts firebase
+                            */
+                            
+                            for i in 1...snapshot.childrenCount-1 { // iterate from post 1
+                                refPath.child(String(i)).observe(.value, with: {      snapshot in // for each element in emergencyContacts
+                                    
+                                    // search
+                                    let textToFind = snapshot.value! as? Int
+                                    print(textToFind)
+                                    self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").queryOrdered(byChild: "number").queryEqual(toValue:textToFind).observe(.value, with: { snapshot in
+                                        if (snapshot.value is NSNull) {
+                                            print("Skillet was not found")
+                                        }
+                                        else {
+                                            for child in snapshot.children {   //in case there are several skillets
+                                                let key = (child as AnyObject).key as String
+                                                self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(key)).child("name").observe(.value, with: {      snapshot in
+                                                    emergencyNames.append((snapshot.value! as? String)!)
+                                                    if (emergencyNames.count == count) { // array is not missing data
+                                                        print(emergencyNames)
+                                                    }
+                                                })
+                                                self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(String(key)).child("number").observe(.value, with: {      snapshot in
+                                                    emergencyNumbers.append((snapshot.value! as? Int)!)
+                                                    if (emergencyNumbers.count == count) { // array is not missing data
+                                                        print(emergencyNumbers)
+                                                    }
+                                                })
+                                            }
+                                        }
+                                    })
+                                    
+                                    
+                                })
+                            }
+                        }
+                        else { // no elements to import
+                        }
+                    })
+                    
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
                     self.present(vc!, animated: true, completion: nil)
                     
@@ -50,6 +124,5 @@ class LoginController: UIViewController {
                 }
             }
         }
-
     }
 }

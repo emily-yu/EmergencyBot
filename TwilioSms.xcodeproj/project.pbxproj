@@ -17,6 +17,7 @@
 		A18A27691EE28D7E006A1887 /* PreferenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18A27681EE28D7E006A1887 /* PreferenceController.swift */; };
 		A1C20EF31EDC9ECC0056B59F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C20EF21EDC9ECC0056B59F /* LoginController.swift */; };
 		A1C20EF61EDC9EFC0056B59F /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C20EF51EDC9EFC0056B59F /* SignUpController.swift */; };
+		A1D254631EE407CC000FDF7A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D254621EE407CC000FDF7A /* Storage.swift */; };
 		A1F7D7C91E7102F4005F19E9 /* NewContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */; };
 		D28788FC1D95E27F003668D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28788FB1D95E27F003668D7 /* AppDelegate.swift */; };
 		D28788FE1D95E27F003668D7 /* CrowdMessenging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28788FD1D95E27F003668D7 /* CrowdMessenging.swift */; };
@@ -38,6 +39,7 @@
 		A18A27681EE28D7E006A1887 /* PreferenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceController.swift; sourceTree = "<group>"; };
 		A1C20EF21EDC9ECC0056B59F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		A1C20EF51EDC9EFC0056B59F /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		A1D254621EE407CC000FDF7A /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		A1F7D7C81E7102F4005F19E9 /* NewContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewContactController.swift; sourceTree = "<group>"; };
 		D28788F81D95E27F003668D7 /* TwilioSms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwilioSms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28788FB1D95E27F003668D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				D28788FB1D95E27F003668D7 /* AppDelegate.swift */,
+				A1D254621EE407CC000FDF7A /* Storage.swift */,
 				A14AC4261EE2B9B800869727 /* Preferences */,
 				A1C20EF41EDC9ED20056B59F /* Auth */,
 				A15588F71EDADD8800552B38 /* Crowd Messenging */,
@@ -289,6 +292,7 @@
 				A1F7D7C91E7102F4005F19E9 /* NewContactController.swift in Sources */,
 				A18A27691EE28D7E006A1887 /* PreferenceController.swift in Sources */,
 				A119B6B21E674BA500BCB6D3 /* ContactsController.swift in Sources */,
+				A1D254631EE407CC000FDF7A /* Storage.swift in Sources */,
 				A1C20EF31EDC9ECC0056B59F /* LoginController.swift in Sources */,
 				A1C20EF61EDC9EFC0056B59F /* SignUpController.swift in Sources */,
 				D28788FC1D95E27F003668D7 /* AppDelegate.swift in Sources */,

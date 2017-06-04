@@ -16,13 +16,23 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
     let cellReuseIdentifier = "cell"
     var ref = FIRDatabase.database().reference()
     
+    @IBOutlet var delayLabel: UILabel!
     @IBAction func emergencyPress(_ sender: Any) {
-        print("TODO: Send Message After Delay")
+        print("TODO: Send Message")
         
-        var userID = FIRAuth.auth()!.currentUser!.uid
-        
-        Alamofire.request("\(ngrok)/test?userid=\(userID)").response { response in
-            print(response)
+        if let same = (delayLabel.text)?.components(separatedBy: ": ").last {
+            print(same)
+            let time2 = (same as NSString).intValue
+            let seconds = Double(time2)
+            let when = DispatchTime.now() + seconds
+            DispatchQueue.main.asyncAfter(deadline: when){
+                print("same")
+                var userID = FIRAuth.auth()!.currentUser!.uid
+                // replace this with the sending thing
+                Alamofire.request("\(ngrok)/test?userid=\(userID)").response { response in
+                    print(response)
+                }
+            }
         }
         
     }
@@ -46,15 +56,15 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     // number of rows in table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animals.count
+        return emergencyNames.count
     }
     
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell:EmergencyControllerCell = self.tableView.dequeueReusableCell(withIdentifier: "EmergencyControllerCell") as! EmergencyControllerCell
         
-        cell.cellHeader.text = animals[indexPath.row]
-        cell.cellSubtitle.text = String(troll[indexPath.row])
+        cell.cellHeader.text = emergencyNames[indexPath.row]
+        cell.cellSubtitle.text = String(emergencyNumbers[indexPath.row])
 //        tableView.rowHeight = 80
         
         return cell

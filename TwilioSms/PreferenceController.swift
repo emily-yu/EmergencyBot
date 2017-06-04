@@ -10,8 +10,6 @@ import Foundation
 import UIKit
 import Alamofire
 
-var ngrok = "http://30e415d8.ngrok.io"
-
 class PreferenceController: UIViewController {
     
     @IBOutlet var countryCode: UITextField!

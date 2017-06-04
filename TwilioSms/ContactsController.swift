@@ -6,17 +6,6 @@
 //  Copyright © 2017 Emily. All rights reserved.
 //
 
-//import UIKit
-//import APAddressBook
-//
-//fileprivate let cellIdentifier = String(describing: UITableViewCell.self)
-//
-//class CustomizeController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-//
-
-var animals: [String] = ["Name1", "Name2", "Name3", "Name4", "Name5", "Name6"]
-var troll: [Int] = [6505754922, 6505754922, 6505754922, 6505754922, 6505754922, 6505754922, 6505754922]
-
 
 import UIKit
 class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataSource {
