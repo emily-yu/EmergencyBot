@@ -27,6 +27,7 @@ class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         ref = FIRDatabase.database().reference()
         
+        // import contacts (name, number, delay, additional notes)
         self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").observe(.value, with: {      snapshot in
             let count = Int(snapshot.childrenCount-1)
             if (count > 0) { // has elements to import
