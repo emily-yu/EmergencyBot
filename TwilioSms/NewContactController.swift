@@ -8,8 +8,11 @@
 
 import UIKit
 import Foundation
+import Firebase
 
 class NewContactController: UIViewController {
+    
+    var ref: FIRDatabaseReference!
     
     @IBOutlet var name: UITextField!
     @IBOutlet var phoneNumber: UITextField!
@@ -22,21 +25,32 @@ class NewContactController: UIViewController {
     }
     
     @IBAction func submitButton(_ sender: Any) {
+        ref = FIRDatabase.database().reference()
         if (phoneNumber.text != "" ){
-            // append textfields to array
+            
+            // Local
             contactNames.append(name.text!)
             contactNumbers.append(Int(phoneNumber.text!)!)
+            contactAdditionalInfo.append(additionalNotes.text)
+            contactDelay.append(Float(stepperVal.value))
             
-            // save new array
-            
-            // add to firebase
+            // Firebase
+            self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").observeSingleEvent(of: .value) { (snapshot: FIRDataSnapshot) in
+                var count = String((((snapshot.value!) as AnyObject).count))
+                self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(count).setValue([
+                    "delay": self.stepperVal.value,
+                    "name": self.name.text,
+                    "notes": self.additionalNotes.text,
+                    "number": Int(self.phoneNumber.text!),
+                    "sendLocation": false
+                ])
+            }
             
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
             self.present(vc!, animated: true, completion: nil)
         }
         else {
-            //Error
-            let alertController = UIAlertController(title: "Submission Error", message: "gg need a phone number troll", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Submission Error", message: "You cannot create a contact without a phone number.", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -51,8 +65,7 @@ class NewContactController: UIViewController {
          stepperVal.autorepeat = true
     }
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "contactSegue"){
-            
+        if(segue.identifier == "contactSegue") {
             if let tabVC = segue.destination as? UITabBarController{
                 tabVC.selectedIndex = 0
                 tabVC.modalPresentationStyle = .custom

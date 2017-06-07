@@ -31,7 +31,7 @@
                                         <rect key="frame" x="0.0" y="28" width="301" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zgi-v7-rpJ" id="24P-H9-zF4">
-                                            <rect key="frame" x="0.0" y="0.0" width="301" height="76"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="301" height="76.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-l9-eie">
@@ -315,7 +315,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5wq-Dc-PIv" id="NCE-Q4-lKt">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(123)123-1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6H-dA-VOf">
@@ -989,6 +989,6 @@
         <image name="urgentIcon" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FDk-vc-C33"/>
+        <segue reference="iVw-ME-aeF"/>
     </inferredMetricsTieBreakers>
 </document>

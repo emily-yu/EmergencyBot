@@ -91,7 +91,7 @@ class CustomizeContactController: UIViewController {
     }
     
     @IBAction func stepperPressed(_ sender: Any) {
-        var stepperText = stepper.value
+        let stepperText = stepper.value
         delayLabel.text = "Delay(sec) \(stepperText)"
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
