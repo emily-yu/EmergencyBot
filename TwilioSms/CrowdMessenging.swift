@@ -11,13 +11,23 @@ import Alamofire
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let cellReuseIdentifier = "cell"
-    var selectedCells: [Int] = [] // indexes
+    var selectedCells: [Int] = [] // contact indexes that have selected
     
 //    @IBOutlet var phoneNumberField: UITextField!
     @IBOutlet var messageField: UITextView!
     @IBOutlet var tableView: UITableView! // filler values
     @IBAction func sendData(sender: AnyObject) {
-
+        if (selectedCells.count != 0) {
+            for selectedIndex in selectedCells {
+                sendMessage(contact: contactNumbers[selectedIndex])
+            }
+        }
+        else {
+            let alertController = UIAlertController(title: "No target destination", message: "Please select at least one contact in the menu below to send your message to.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     func sendMessage(contact:Int){
@@ -37,7 +47,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func viewDidLoad() {
-//        self.hideKeyboardWhenTappedAround()
         super.viewDidLoad()
         
         // set up the tableView
@@ -77,9 +86,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         print("ARRAY: \(selectedCells)")
         tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
     
     override func didReceiveMemoryWarning() {

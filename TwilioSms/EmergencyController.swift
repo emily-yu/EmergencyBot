@@ -27,7 +27,7 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
             let when = DispatchTime.now() + seconds
             DispatchQueue.main.asyncAfter(deadline: when){
                 print("same")
-                var userID = FIRAuth.auth()!.currentUser!.uid
+                let userID = FIRAuth.auth()!.currentUser!.uid
                 // replace this with the sending thing
                 Alamofire.request("\(ngrok)/test?userid=\(userID)").response { response in
                     print(response)
@@ -61,7 +61,7 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell:EmergencyControllerCell = self.tableView.dequeueReusableCell(withIdentifier: "EmergencyControllerCell") as! EmergencyControllerCell
+        let cell:EmergencyControllerCell = self.tableView.dequeueReusableCell(withIdentifier: "EmergencyControllerCell") as! EmergencyControllerCell
         
         cell.cellHeader.text = emergencyNames[indexPath.row]
         cell.cellSubtitle.text = String(emergencyNumbers[indexPath.row])

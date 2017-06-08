@@ -20,7 +20,7 @@ class NewContactController: UIViewController {
     @IBOutlet var delayLabel: UILabel!
     @IBOutlet var stepperVal: UIStepper!
     @IBAction func stepper(_ sender: Any) {
-        var stepperText = stepperVal.value
+        let stepperText = stepperVal.value
         delayLabel.text = "Delay(sec) \(stepperText)"
     }
     
@@ -36,7 +36,7 @@ class NewContactController: UIViewController {
             
             // Firebase
             self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").observeSingleEvent(of: .value) { (snapshot: FIRDataSnapshot) in
-                var count = String((((snapshot.value!) as AnyObject).count))
+                let count = String((((snapshot.value!) as AnyObject).count))
                 self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").child(count).setValue([
                     "delay": self.stepperVal.value,
                     "name": self.name.text,
