@@ -927,10 +927,19 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ACTIVE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krm-go-0dF">
+                                                    <rect key="frame" x="175" y="8" width="74" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.57454901930000002" green="0.72993499039999998" blue="0.2784076929" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="cellHeader" destination="DZA-g6-i2F" id="fcb-RM-udR"/>
+                                            <outlet property="cellStatus" destination="Krm-go-0dF" id="7gE-xT-XzA"/>
                                             <outlet property="cellSubtitle" destination="kuj-eO-Cza" id="KUo-Ce-dAE"/>
                                         </connections>
                                     </tableViewCell>

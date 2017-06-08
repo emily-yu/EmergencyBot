@@ -10,13 +10,14 @@ import Alamofire
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    let cellReuseIdentifier = "cell"
+    var selectedCells: [Int] = [] // indexes
+    
 //    @IBOutlet var phoneNumberField: UITextField!
     @IBOutlet var messageField: UITextView!
     @IBOutlet var tableView: UITableView! // filler values
     @IBAction func sendData(sender: AnyObject) {
-//        for i in emergencyContacts {
-//            sendMessage(contact: i);
-//        }
+
     }
     
     func sendMessage(contact:Int){
@@ -36,14 +37,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func viewDidLoad() {
-        self.hideKeyboardWhenTappedAround()
+//        self.hideKeyboardWhenTappedAround()
         super.viewDidLoad()
         
         // set up the tableView
-        let cellReuseIdentifier = "cell"
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     // number of rows in table view
@@ -53,10 +53,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell:CrowdMessengingCell = self.tableView.dequeueReusableCell(withIdentifier: "CrowdMessengingCell") as! CrowdMessengingCell
+        let cell:CrowdMessengingCell = self.tableView.dequeueReusableCell(withIdentifier: "CrowdMessengingCell") as! CrowdMessengingCell
         
         cell.cellHeader.text = contactNames[indexPath.row]
         cell.cellSubtitle.text = String(contactNumbers[indexPath.row])
+        cell.cellStatus.isHidden = true
         
         return cell
     }
@@ -64,43 +65,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
-//        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-    
-    // this method handles row deletion
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if editingStyle == .delete {
-            
-            // remove the item from the data model
-            contactNames.remove(at: indexPath.row)
-            
-            // delete the table view row
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            
-        } else if editingStyle == .insert {
-            // Not used in our example, but if you were adding a new row, this is where you would do it.
+        let cell:CrowdMessengingCell = self.tableView.cellForRow(at: indexPath)! as! CrowdMessengingCell
+        // visual tracking
+        if (cell.cellStatus.isHidden == true) {
+            cell.cellStatus.isHidden = false
+            selectedCells.append(indexPath.row)
         }
+        else {
+            cell.cellStatus.isHidden = true
+            selectedCells = selectedCells.filter {$0 != (indexPath.row)} // remove cell
+        }
+        print("ARRAY: \(selectedCells)")
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
-        // action one
-        let editAction = UITableViewRowAction(style: .default, title: "Edit", handler: { (action, indexPath) in
-            print("Edit tapped")
-        })
-        editAction.backgroundColor = UIColor.blue
-        
-        // action two
-        let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: { (action, indexPath) in
-            print("Delete tapped")
-        })
-        deleteAction.backgroundColor = UIColor.red
-        
-        return [editAction, deleteAction]
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -111,4 +92,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 class CrowdMessengingCell: UITableViewCell {
     @IBOutlet var cellHeader: UILabel!
     @IBOutlet var cellSubtitle: UILabel!
+    @IBOutlet var cellStatus: UILabel!
 }

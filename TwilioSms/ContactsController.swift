@@ -27,43 +27,87 @@ class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         ref = FIRDatabase.database().reference()
         
-        // import contacts (name, number, delay, additional notes)
-        self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").observe(.value, with: {      snapshot in
-            let count = Int(snapshot.childrenCount-1)
-            if (count > 0) { // has elements to import
-                for i in 1...snapshot.childrenCount-1 { // iterate from post 1
-                    
-                    let importPath = self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts")
-                    importPath.child(String(i)).child("name").observe(.value, with: {      snapshot in
-                        contactNames.append(snapshot.value as! String)
-                        if (contactNames.count == count) { // array is not missing data
-                            print("CONTACT NAMES: \(contactNames)")
-                        }
-                    })
-                    importPath.child(String(i)).child("number").observe(.value, with: {      snapshot in
-                        contactNumbers.append(snapshot.value as! Int)
-                        if (contactNumbers.count == count) { // array is not missing data
-                            print("CONTACT NUMBERS: \(contactNumbers)")
-                        }
-                    })
-                    importPath.child(String(i)).child("delay").observe(.value, with: {      snapshot in
-                        contactDelay.append(snapshot.value as! Float)
-                        if (contactDelay.count == count) { // array is not missing data
-                            print("CONTACT DELAY: \(contactDelay)")
-                        }
-                    })
-                    importPath.child(String(i)).child("notes").observe(.value, with: {      snapshot in
-                        contactAdditionalInfo.append(snapshot.value as! String)
-                        if (contactAdditionalInfo.count == count) { // array is not missing data
-                            print("CONTACT NOTES: \(contactAdditionalInfo)")
-                            self.tableView.reloadData()
-                        }
-                    })
+        if (contactNames.count != 0) { // there are elements, not first load
+            print("CustomizeController - Not First Load")
+        }
+        else {
+            print("CustomizeController - Not First Load")
+            // import contacts (name, number, delay, additional notes)
+            self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").observe(.value, with: {      snapshot in
+                let count = Int(snapshot.childrenCount-1)
+                if (count > 0) { // has elements to import
+                    for i in 1...snapshot.childrenCount-1 { // iterate from post 1
+                        
+                        let importPath = self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts")
+                        importPath.child(String(i)).child("name").observe(.value, with: {      snapshot in
+                            contactNames.append(snapshot.value as! String)
+                            if (contactNames.count == count) { // array is not missing data
+                                print("CONTACT NAMES: \(contactNames)")
+                            }
+                        })
+                        importPath.child(String(i)).child("number").observe(.value, with: {      snapshot in
+                            contactNumbers.append(snapshot.value as! Int)
+                            if (contactNumbers.count == count) { // array is not missing data
+                                print("CONTACT NUMBERS: \(contactNumbers)")
+                            }
+                        })
+                        importPath.child(String(i)).child("delay").observe(.value, with: {      snapshot in
+                            contactDelay.append(snapshot.value as! Float)
+                            if (contactDelay.count == count) { // array is not missing data
+                                print("CONTACT DELAY: \(contactDelay)")
+                            }
+                        })
+                        importPath.child(String(i)).child("notes").observe(.value, with: {      snapshot in
+                            contactAdditionalInfo.append(snapshot.value as! String)
+                            if (contactAdditionalInfo.count == count) { // array is not missing data
+                                print("CONTACT NOTES: \(contactAdditionalInfo)")
+                                self.tableView.reloadData()
+                            }
+                        })
+                    }
                 }
-            }
-            else { // no elements to import
-            }
-        })
+                else { // no elements to import
+                }
+            })
+        }
+        
+//        // import contacts (name, number, delay, additional notes)
+//        self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").observe(.value, with: {      snapshot in
+//            let count = Int(snapshot.childrenCount-1)
+//            if (count > 0) { // has elements to import
+//                for i in 1...snapshot.childrenCount-1 { // iterate from post 1
+//                    
+//                    let importPath = self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts")
+//                    importPath.child(String(i)).child("name").observe(.value, with: {      snapshot in
+//                        contactNames.append(snapshot.value as! String)
+//                        if (contactNames.count == count) { // array is not missing data
+//                            print("CONTACT NAMES: \(contactNames)")
+//                        }
+//                    })
+//                    importPath.child(String(i)).child("number").observe(.value, with: {      snapshot in
+//                        contactNumbers.append(snapshot.value as! Int)
+//                        if (contactNumbers.count == count) { // array is not missing data
+//                            print("CONTACT NUMBERS: \(contactNumbers)")
+//                        }
+//                    })
+//                    importPath.child(String(i)).child("delay").observe(.value, with: {      snapshot in
+//                        contactDelay.append(snapshot.value as! Float)
+//                        if (contactDelay.count == count) { // array is not missing data
+//                            print("CONTACT DELAY: \(contactDelay)")
+//                        }
+//                    })
+//                    importPath.child(String(i)).child("notes").observe(.value, with: {      snapshot in
+//                        contactAdditionalInfo.append(snapshot.value as! String)
+//                        if (contactAdditionalInfo.count == count) { // array is not missing data
+//                            print("CONTACT NOTES: \(contactAdditionalInfo)")
+//                            self.tableView.reloadData()
+//                        }
+//                    })
+//                }
+//            }
+//            else { // no elements to import
+//            }
+//        })
     }
     
     // number of rows in table view
