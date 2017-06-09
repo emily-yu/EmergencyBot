@@ -15,6 +15,7 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     let cellReuseIdentifier = "cell"
     var ref = FIRDatabase.database().reference()
+    var netDelay: Float = 0.0
     
     @IBOutlet var delayLabel: UILabel!
     @IBAction func emergencyPress(_ sender: Any) {
@@ -28,13 +29,41 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
             DispatchQueue.main.asyncAfter(deadline: when){
                 print("same")
                 let userID = FIRAuth.auth()!.currentUser!.uid
-                // replace this with the sending thing
-                Alamofire.request("\(ngrok)/test?userid=\(userID)").response { response in
-                    print(response)
+                
+                // Sending Message
+//                Alamofire.request("\(ngrok)/test?userid=\(userID)").response { response in
+//                    print(response)
+//                }
+                if (emergencyNumbers.count != 0) {
+                    for contact in emergencyNumbers {
+                        self.sendMessage(contact: emergencyNumbers[contact])
+                    }
+                }
+                else {
+                    let alertController = UIAlertController(title: "No target destination", message: "Please select at least one contact in the menu below to send your message to.", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
                 }
             }
         }
         
+    }
+    
+    func sendMessage(contact:Int){
+        let headers = [
+            "Content-Type": "application/x-www-form-urlencoded"
+        ]
+        
+        let parameters: Parameters = [
+            "To": String(contact),
+            "From": yourNumber,
+            "Body": emergencyMessage ?? ""
+        ]
+        
+        Alamofire.request("\(ngrok)/sms", method: .post, parameters: parameters, headers: headers).response { response in
+            print(response)
+        }
     }
     
     @IBAction func delayInfo(_ sender: Any) {
@@ -47,6 +76,14 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        for (index, time) in emergencyDelay.enumerated() {
+            netDelay = netDelay + time
+            if (index == emergencyDelay.count-1) { // done
+                netDelay = netDelay/(Float(emergencyDelay.count))
+                delayLabel.text = "Delay Time (sec): \(netDelay)"
+            }
+        }
         
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.delegate = self
@@ -65,48 +102,8 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         cell.cellHeader.text = emergencyNames[indexPath.row]
         cell.cellSubtitle.text = String(emergencyNumbers[indexPath.row])
-//        tableView.rowHeight = 80
         
         return cell
-    }
-    
-    // method to run when table view cell is tapped
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-    // this method handles row deletion
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if editingStyle == .delete {
-            
-            // remove the item from the data model
-            contactNames.remove(at: indexPath.row)
-            
-            // delete the table view row
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            
-        } else if editingStyle == .insert {
-            // Not used in our example, but if you were adding a new row, this is where you would do it.
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
-        // action one
-        let editAction = UITableViewRowAction(style: .default, title: "Edit", handler: { (action, indexPath) in
-            print("Edit tapped")
-        })
-        editAction.backgroundColor = UIColor.blue
-        
-        // action two
-        let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: { (action, indexPath) in
-            print("Delete tapped")
-        })
-        deleteAction.backgroundColor = UIColor.red
-        
-        return [editAction, deleteAction]
     }
 }
 

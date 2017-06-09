@@ -31,3 +31,6 @@ var verifiedNumbers: [Int] = [16504223512] // list of verified numbers
 
 // Contacts -> Customize
 var clickedIndex: Int!
+
+// Sent from EmergencyController -- provide a way to change this in preference controller
+var emergencyMessage = "This is the default message. I'm currently in a state of emergency and sent this so you should probably come find me before something bad happens. Thanks a lot my good sir"
