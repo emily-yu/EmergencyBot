@@ -26,14 +26,14 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
             let time2 = (same as NSString).intValue
             let seconds = Double(time2)
             let when = DispatchTime.now() + seconds
-            DispatchQueue.main.asyncAfter(deadline: when){
-                print("same")
-                let userID = FIRAuth.auth()!.currentUser!.uid
-                
-                // Sending Message
-//                Alamofire.request("\(ngrok)/test?userid=\(userID)").response { response in
-//                    print(response)
-//                }
+            
+            let alert = UIAlertController(title: "False Alarm", message: "Please hit 'OK' if the user letting go of the button was a false alarm. Otherwise, a message for help will be sent in \(when) seconds.", preferredStyle: .alert)
+            //            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            let task = DispatchWorkItem {
+                print("ruh roh")
+                alert.dismiss(animated: true, completion: nil)
+//                 Sending Message
                 if (emergencyNumbers.count != 0) {
                     for contact in emergencyNumbers {
                         self.sendMessage(contact: emergencyNumbers[contact])
@@ -46,6 +46,14 @@ class EmergencyController: UIViewController,UITableViewDelegate,UITableViewDataS
                     self.present(alertController, animated: true, completion: nil)
                 }
             }
+            // execute task in 2 seconds - start queueu
+            DispatchQueue.main.asyncAfter(deadline: when, execute: task)
+        
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                task.cancel()
+            })
+            alert.addAction(defaultAction)
+            self.present(alert, animated: true, completion: nil)
         }
         
     }
