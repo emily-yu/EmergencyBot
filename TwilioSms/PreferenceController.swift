@@ -15,6 +15,18 @@ class PreferenceController: UIViewController {
     @IBOutlet var countryCode: UITextField!
     @IBOutlet var phoneNumber: UITextField!
     @IBOutlet var verification: UITextField!
+    @IBOutlet var emergencyText: UITextView!
+
+    
+    @IBAction func changeMessage(_ sender: Any) {
+        
+        emergencyMessage = emergencyText.text
+        
+        let alertController = UIAlertController(title: "Emergency Message Changed", message: "Your preferred message has successfully been changed. Contacts will now be messaged with your new message.", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(defaultAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
     
     @IBAction func info(_ sender: Any) {
         let alertController = UIAlertController(title: "Phone Number Verification", message: "To use a number with EmergencyBot, you must first verify it. A verification code will be sent via SMS to the number inputted.", preferredStyle: .alert)
@@ -47,6 +59,7 @@ class PreferenceController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emergencyText.text = emergencyMessage
     }
     
 }

@@ -480,19 +480,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="default message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qj8-Tf-td1">
+                                <rect key="frame" x="51" y="374" width="273" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emergency Alert Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo9-zI-165">
+                                <rect key="frame" x="79" y="345" width="216" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i55-Dl-41R">
+                                <rect key="frame" x="51" y="484" width="273" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96079611778259277" green="0.96077799797058105" blue="0.96079027652740479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="0.43537414070000002" green="0.43536540870000001" blue="0.43537136910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeMessage:" destination="QYp-Rj-H6b" eventType="touchUpInside" id="GQu-Kp-SbA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settingIcon" selectedImage="settingIcon" id="6Sa-vi-DdC"/>
                     <connections>
                         <outlet property="countryCode" destination="O46-bh-CbL" id="oe0-sI-LIl"/>
+                        <outlet property="emergencyText" destination="Qj8-Tf-td1" id="7Dy-af-sLS"/>
                         <outlet property="phoneNumber" destination="XeD-E7-Cvx" id="M2c-Ye-h30"/>
                         <outlet property="verification" destination="qCW-UA-zXo" id="4f7-NB-ZGd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1KP-uD-l0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1033" y="1780"/>
+            <point key="canvasLocation" x="-1034.4000000000001" y="1779.7601199400301"/>
         </scene>
         <!--Add Emergency Controller-->
         <scene sceneID="n8P-pu-xWS">
