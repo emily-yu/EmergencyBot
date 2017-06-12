@@ -35,72 +35,15 @@ class LoginController: UIViewController {
                     
                     print("You have successfully logged in")
                     
-//                    // import emergency contacts (name, numbers)
-//                    let refPath = self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("emergencyContact")
-//                    refPath.observe(.value, with: {      snapshot in
-//                        let count = Int(snapshot.childrenCount-1)
-//                        if (count > 0) { // has elements to import
-//                            
-//                            /*
-//                             for each element in emergencyContacts
-//                                find element in contacts by phone number and retrive key
-//                                    find where in contacts-number array it is
-//                                    use that index to get the details (name, number, delay) from the contacts firebase
-//                            */
-//                            
-//                            for i in 1...snapshot.childrenCount-1 { // iterate from post 1
-//                                refPath.child(String(i)).observe(.value, with: {      snapshot in // for each element in emergencyContacts
-//                                    
-//                                    // search
-//                                    let textToFind = snapshot.value! as? Int
-//                                    self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts").queryOrdered(byChild: "number").queryEqual(toValue:textToFind).observe(.value, with: { snapshot in
-//                                        if (snapshot.value is NSNull) {
-//                                            print("Skillet was not found")
-//                                        }
-//                                        else {
-//                                            for child in snapshot.children {   //in case there are several skillets
-//                                                let key = (child as AnyObject).key as String
-//                                                
-//                                                emergencyIndexes.append(key)
-//                                                
-//                                                let importPath = self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("contacts")
-//                                                importPath.child(String(key)).child("name").observe(.value, with: {      snapshot in
-//                                                    emergencyNames.append((snapshot.value! as? String)!)
-//                                                    if (emergencyNames.count == count) { // array is not missing data
-//                                                        print("EMERGENCY NAMES: \(emergencyNames)")
-//                                                    }
-//                                                })
-//                                                importPath.child(String(key)).child("number").observe(.value, with: {      snapshot in
-//                                                    emergencyNumbers.append((snapshot.value! as? Int)!)
-//                                                    if (emergencyNumbers.count == count) { // done importing
-//                                                        print("EMERGENCY NUMBERS: \(emergencyNumbers)")
-//                                                        let ivc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
-//                                                        ivc?.modalPresentationStyle = .custom
-//                                                        ivc?.modalTransitionStyle = .crossDissolve
-//                                                        self.present(ivc!, animated: true, completion: { _ in })
-//                                                    }
-//                                                })
-//                                                importPath.child(String(key)).child("delay").observe(.value, with: {      snapshot in
-//                                                    emergencyDelay.append((snapshot.value! as? Float)!)
-//                                                    if (emergencyDelay.count == count) { // done importing
-//                                                        print("EMERGENCY DELAY: \(emergencyDelay)")
-                                                        let ivc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
-                                                        ivc?.modalPresentationStyle = .custom
-                                                        ivc?.modalTransitionStyle = .crossDissolve
-                                                        self.present(ivc!, animated: true, completion: { _ in })
-//                                                    }
-//                                                })
-//                                            }
-//                                        }
-//                                    })
-//                                    
-//                                    
-//                                })
-//                            }
-//                        }
-//                        else { // no elements to import
-//                        }
-//                    })
+                    // retrieve message
+                    self.ref.child(FIRAuth.auth()!.currentUser!.uid).child("emergencyMessage").observe(.value, with: {      snapshot in
+                        emergencyMessage = snapshot.value as! String
+                    })
+
+                    let ivc = self.storyboard?.instantiateViewController(withIdentifier: "navbar")
+                    ivc?.modalPresentationStyle = .custom
+                    ivc?.modalTransitionStyle = .crossDissolve
+                    self.present(ivc!, animated: true, completion: { _ in })
                 }
                 else {
                     

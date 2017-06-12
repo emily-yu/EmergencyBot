@@ -9,8 +9,11 @@
 import Foundation
 import UIKit
 import Alamofire
+import Firebase
 
 class PreferenceController: UIViewController {
+    
+    var ref: FIRDatabaseReference!
     
     @IBOutlet var countryCode: UITextField!
     @IBOutlet var phoneNumber: UITextField!
@@ -20,7 +23,11 @@ class PreferenceController: UIViewController {
     
     @IBAction func changeMessage(_ sender: Any) {
         
+        // change local
         emergencyMessage = emergencyText.text
+        
+        // change firebase
+        ref.child(FIRAuth.auth()!.currentUser!.uid).child("emergencyMessage").setValue(emergencyText.text)
         
         let alertController = UIAlertController(title: "Emergency Message Changed", message: "Your preferred message has successfully been changed. Contacts will now be messaged with your new message.", preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -59,7 +66,9 @@ class PreferenceController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         emergencyText.text = emergencyMessage
+        ref = FIRDatabase.database().reference()
     }
     
 }
