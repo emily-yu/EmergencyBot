@@ -143,12 +143,6 @@ class CustomizeController: UIViewController,UITableViewDelegate,UITableViewDataS
         return cell
     }
     
-    // method to run when table view cell is tapped
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         clickedIndex = indexPath.row
