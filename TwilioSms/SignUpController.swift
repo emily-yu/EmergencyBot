@@ -60,4 +60,13 @@ class SignUpController: UIViewController {
         }
     }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "auth"){
+            if let tabVC = segue.destination as? UIViewController{
+                tabVC.modalPresentationStyle = .custom
+                tabVC.modalTransitionStyle = .crossDissolve
+            }
+        }
+    }
 }
