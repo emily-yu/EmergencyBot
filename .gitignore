@@ -2,3 +2,4 @@ __pycache__/
 flask
 .DS_Store
 secret.py
+venv
