@@ -13,7 +13,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let cellReuseIdentifier = "cell"
     var selectedCells: [Int] = [] // contact indexes that have selected
     
-//    @IBOutlet var phoneNumberField: UITextField!
     @IBOutlet var messageField: UITextView!
     @IBOutlet var tableView: UITableView! // filler values
     @IBAction func sendData(sender: AnyObject) {
@@ -36,8 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         ]
         
         let parameters: Parameters = [
-            "To": String(contact), //loop this through emergencyContacts
-            "From": yourNumber, // not sure if like same works right now
+            "To": String(contact),
+            "From": yourNumber,
             "Body": messageField.text ?? ""
         ]
         
